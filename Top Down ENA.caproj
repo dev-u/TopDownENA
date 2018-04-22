@@ -10,8 +10,10 @@
     <unique-id>174wkrc88kqbj</unique-id>
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -59,14 +61,25 @@
         <object-type name="Keyboard" sid="821029808364310">
             <plugin id="Keyboard" />
         </object-type>
+        <object-type name="txtbox_playerName" sid="364273999388900">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="btn_startGame" sid="631620353057846">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button" sid="122199665141608">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Scene 1 - Goku.xml</layout>
+        <layout>Main Menu.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Scene 1 - Goku Events.xml</event-sheet>
         <event-sheet>playerGoku Events.xml</event-sheet>
+        <event-sheet>Main Menu Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />

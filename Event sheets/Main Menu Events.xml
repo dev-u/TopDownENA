@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Main Menu Events</name>
+    <events>
+        <variable constant="0" name="playerName" sid="612859143894028" static="0" type="text"></variable>
+        <event-block sid="497563814040837">
+            <conditions>
+                <condition id="0" name="On clicked" sid="278030659402044" type="btn_startGame" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="808034516029841" type="System">
+                    <param id="0" name="Variable">playerName</param>
+                    <param id="1" name="Value">txtbox_playerName.Text</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="818852928084048" type="System">
+                    <param id="0" name="Layout">Scene 1 - Goku</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
