@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>playerGoku Events</name>
+    <events>
+        <event-block sid="730543613010169">
+            <conditions>
+                <condition id="2" name="Key is down" sid="648665826793108" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="335510112243396" type="spr_playerGoku">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="638647523471532">
+            <conditions>
+                <condition id="2" name="Key is down" sid="324474988453854" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="180815818320140" type="spr_playerGoku">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="117187672351882">
+            <conditions>
+                <condition id="2" name="Key is down" sid="223803689228815" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="566412475895544" type="spr_playerGoku">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="759446462338778">
+            <conditions>
+                <condition id="2" name="Key is down" sid="723387605755764" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="860060623241033" type="spr_playerGoku">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="122195727526528">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="395661116637267" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="210716021559657" type="spr_playerGoku">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="845058558311654">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="301894757371866" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="337915881880244" type="spr_playerGoku">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="149681544871860">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="633158768949440" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="297181592176031" type="spr_playerGoku">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="593275718393485">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="961725553048261" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="368390108471231" type="spr_playerGoku">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
