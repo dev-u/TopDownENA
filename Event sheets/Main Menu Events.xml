@@ -7,6 +7,10 @@
         <event-block sid="497563814040837">
             <conditions>
                 <condition id="0" name="On clicked" sid="278030659402044" type="btn_startGame" />
+                <condition id="0" inverted="1" name="Compare text" sid="344157176317823" type="txtbox_playerName">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="808034516029841" type="System">
