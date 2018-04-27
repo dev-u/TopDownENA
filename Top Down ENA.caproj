@@ -78,7 +78,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Scene 1 - Goku Events.xml</event-sheet>
-        <event-sheet>playerGoku Events.xml</event-sheet>
+        <event-sheet>PlayerGoku Events.xml</event-sheet>
         <event-sheet>Main Menu Events.xml</event-sheet>
     </event-folder>
     <global-instances>
