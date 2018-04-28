@@ -11,7 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout active="1" order="0">Main Menu</layout>
-        <event-sheet order="1">Main Menu Events</event-sheet>
+        <layout order="2">Goku - Scene 1</layout>
+        <event-sheet order="1">PlayerGoku Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -21,7 +22,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Scene 1 - Goku</name>
+    <name>Goku - Scene 1</name>
     <sid>202822614438346</sid>
-    <event-sheet>Scene 1 - Goku Events</event-sheet>
+    <event-sheet>Goku - Scene 1 Events</event-sheet>
     <size>
         <width>1080</width>
         <height>720</height>
@@ -48,18 +48,23 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
-                        <y>320</y>
+                        <x>547.313720703</x>
+                        <y>313.372589111</y>
                         <z>0</z>
-                        <width>34</width>
-                        <height>31</height>
+                        <width>22.627416611</width>
+                        <height>45.254833221</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.45161289</hotspotY>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

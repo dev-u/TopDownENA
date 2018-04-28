@@ -18,7 +18,7 @@
                     <param id="1" name="Value">txtbox_playerName.Text</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="818852928084048" type="System">
-                    <param id="0" name="Layout">Scene 1 - Goku</param>
+                    <param id="0" name="Layout">Goku - Scene 1</param>
                 </action>
             </actions>
         </event-block>

@@ -58,8 +58,9 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-8" name="Set angle" sid="210716021559657" type="spr_playerGoku">
-                    <param id="0" name="Angle">0</param>
+                <action id="4" name="Set animation" sid="210716021559657" type="spr_playerGoku">
+                    <param id="0" name="Animation">&quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -70,8 +71,9 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-8" name="Set angle" sid="337915881880244" type="spr_playerGoku">
-                    <param id="0" name="Angle">270</param>
+                <action id="4" name="Set animation" sid="337771850034372" type="spr_playerGoku">
+                    <param id="0" name="Animation">&quot;Left&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -82,8 +84,9 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-8" name="Set angle" sid="297181592176031" type="spr_playerGoku">
-                    <param id="0" name="Angle">180</param>
+                <action id="4" name="Set animation" sid="118796140116730" type="spr_playerGoku">
+                    <param id="0" name="Animation">&quot;Down&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -94,8 +97,42 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-8" name="Set angle" sid="368390108471231" type="spr_playerGoku">
-                    <param id="0" name="Angle">90</param>
+                <action id="4" name="Set animation" sid="446658902790025" type="spr_playerGoku">
+                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="936889421249835">
+            <conditions>
+                <condition id="2" inverted="1" name="Key is down" sid="515978039855384" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="490841997649300" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="693605266703404" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="341924456086148" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="357120162082749" type="spr_playerGoku">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="674874549562998" type="spr_playerGoku" />
+            </actions>
+        </event-block>
+        <event-block sid="373372395921835">
+            <conditions>
+                <condition id="-22" name="Else" sid="417049358892735" type="System" />
+                <condition id="-4" name="Trigger once while true" sid="656155886734508" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="142350663724955" type="spr_playerGoku">
+                    <param id="0" name="From">0</param>
                 </action>
             </actions>
         </event-block>
