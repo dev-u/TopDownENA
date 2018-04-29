@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Goku - Scene 1 Events</name>
     <events>
-        <include>PlayerGoku Events</include>
+        <include>Player Events</include>
         <event-block sid="816058301718567">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="204199368305636" type="System" />

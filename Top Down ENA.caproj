@@ -184,7 +184,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Goku - Scene 1 Events.xml</event-sheet>
-        <event-sheet>PlayerGoku Events.xml</event-sheet>
+        <event-sheet>Player Events.xml</event-sheet>
         <event-sheet>Main Menu Events.xml</event-sheet>
         <event-sheet>Goku - Scene 2 Events.xml</event-sheet>
         <event-sheet>Goku - Scene 3 Events.xml</event-sheet>
