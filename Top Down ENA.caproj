@@ -11,9 +11,12 @@
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -46,7 +49,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="spr_playerGoku" sid="491726348719306">
+        <object-type name="spr_player" sid="491726348719306">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="8Direction" sid="820716886951766">
@@ -57,19 +60,19 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="4" loop="1" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="909934886995805" speed="5">
+                <animation framecount="4" loop="1" name="GokuUp" pingpong="0" repeatcount="1" repeatto="0" sid="909934886995805" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="4" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="850945344208074" speed="5">
+                <animation framecount="4" loop="1" name="GokuLeft" pingpong="0" repeatcount="1" repeatto="0" sid="850945344208074" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="4" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="936026346599800" speed="5">
+                <animation framecount="4" loop="1" name="GokuRight" pingpong="0" repeatcount="1" repeatto="0" sid="936026346599800" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="1" y="1" />
@@ -103,7 +106,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="4" loop="1" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="943336602552402" speed="5">
+                <animation framecount="4" loop="1" name="GokuDown" pingpong="0" repeatcount="1" repeatto="0" sid="943336602552402" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -120,8 +123,56 @@
         <object-type name="btn_startGame" sid="631620353057846">
             <plugin id="Button" />
         </object-type>
-        <object-type name="Button" sid="122199665141608">
+        <object-type name="btn_creditos" sid="122199665141608">
             <plugin id="Button" />
+        </object-type>
+        <object-type name="spr_playerHealth" sid="893917091820927">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Green" pingpong="0" repeatcount="1" repeatto="0" sid="234919870707188" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Yellow" pingpong="0" repeatcount="1" repeatto="0" sid="334235373156969" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Red" pingpong="0" repeatcount="1" repeatto="0" sid="500771543672235" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_playerHealthBar" sid="646969145888790">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382820525780068" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.545455" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="267621853819510">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="txt_playerAttackUses" sid="373640971308298">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="pgb_playerSpecialAttackProgress" sid="737493035491360">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="txt_playerTime" sid="458454282839925">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="spr_playerSpecialAttackIcon" sid="736504092821029">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Active" pingpong="0" repeatcount="1" repeatto="0" sid="825970012769388" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+                <animation framecount="1" loop="0" name="Inactive" pingpong="0" repeatcount="1" repeatto="0" sid="819742355871403" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_playerName" sid="372210353514887">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
@@ -140,6 +191,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
+        <global-instance type="Function" uid="7" />
     </global-instances>
     <sounds-folder />
     <music-folder />

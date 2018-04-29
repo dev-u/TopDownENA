@@ -4,5 +4,16 @@
     <name>Goku - Scene 1 Events</name>
     <events>
         <include>PlayerGoku Events</include>
+        <event-block sid="816058301718567">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="204199368305636" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="140250277916897" type="System">
+                    <param id="0" name="Variable">playerName</param>
+                    <param id="1" name="Value">&quot;Goku&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

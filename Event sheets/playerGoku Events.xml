@@ -3,6 +3,36 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>PlayerGoku Events</name>
     <events>
+        <variable constant="0" name="playerCharacter" sid="867123669580584" static="0" type="text">Goku</variable>
+        <variable constant="0" name="playerTime" sid="997741563401588" static="0" type="number">0</variable>
+        <variable constant="0" name="playerAttackUses" sid="540029755701373" static="0" type="number">100</variable>
+        <variable constant="1" name="PLAYER_MAX_HEALTH" sid="441926436017199" static="0" type="number">100</variable>
+        <variable constant="0" name="playerHealth" sid="211717881661974" static="0" type="number">100</variable>
+        <comment>System events</comment>
+        <event-block sid="402216485313124">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="506421833358035" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="976893025690911" type="System">
+                    <param id="0" name="Variable">playerTime</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="107434584466965">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="976294841967057" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="245006879871302" type="txt_playerName">
+                    <param id="0" name="Text">playerName</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Movement</comment>
         <event-block sid="730543613010169">
             <conditions>
                 <condition id="2" name="Key is down" sid="648665826793108" type="Keyboard">
@@ -10,7 +40,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="335510112243396" type="spr_playerGoku">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="335510112243396" type="spr_player">
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>
@@ -22,7 +52,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="180815818320140" type="spr_playerGoku">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="180815818320140" type="spr_player">
                     <param id="0" name="Control">0</param>
                 </action>
             </actions>
@@ -34,7 +64,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="566412475895544" type="spr_playerGoku">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="566412475895544" type="spr_player">
                     <param id="0" name="Control">3</param>
                 </action>
             </actions>
@@ -46,7 +76,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="860060623241033" type="spr_playerGoku">
+                <action behavior="8Direction" id="7" name="Simulate control" sid="860060623241033" type="spr_player">
                     <param id="0" name="Control">1</param>
                 </action>
             </actions>
@@ -58,8 +88,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="210716021559657" type="spr_playerGoku">
-                    <param id="0" name="Animation">&quot;Up&quot;</param>
+                <action id="4" name="Set animation" sid="210716021559657" type="spr_player">
+                    <param id="0" name="Animation">playerCharacter&amp;&quot;Up&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -71,8 +101,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="337771850034372" type="spr_playerGoku">
-                    <param id="0" name="Animation">&quot;Left&quot;</param>
+                <action id="4" name="Set animation" sid="991961590114403" type="spr_player">
+                    <param id="0" name="Animation">playerCharacter&amp;&quot;Left&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -84,8 +114,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="118796140116730" type="spr_playerGoku">
-                    <param id="0" name="Animation">&quot;Down&quot;</param>
+                <action id="4" name="Set animation" sid="683873569304510" type="spr_player">
+                    <param id="0" name="Animation">playerCharacter&amp;&quot;Down&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -97,8 +127,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="446658902790025" type="spr_playerGoku">
-                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                <action id="4" name="Set animation" sid="392439215154693" type="spr_player">
+                    <param id="0" name="Animation">playerCharacter&amp;&quot;Right&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -119,10 +149,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="5" name="Set frame" sid="357120162082749" type="spr_playerGoku">
+                <action id="5" name="Set frame" sid="357120162082749" type="spr_player">
                     <param id="0" name="Frame number">0</param>
                 </action>
-                <action id="2" name="Stop" sid="674874549562998" type="spr_playerGoku" />
+                <action id="2" name="Stop" sid="674874549562998" type="spr_player" />
             </actions>
         </event-block>
         <event-block sid="373372395921835">
@@ -131,10 +161,108 @@
                 <condition id="-4" name="Trigger once while true" sid="656155886734508" type="System" />
             </conditions>
             <actions>
-                <action id="3" name="Start" sid="142350663724955" type="spr_playerGoku">
+                <action id="3" name="Start" sid="142350663724955" type="spr_player">
                     <param id="0" name="From">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="740717745887603">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="819383688402068" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="806012214559982" type="spr_playerHealth">
+                    <param id="0" name="X">spr_player.X - (spr_playerHealthBar.Width/2 - 2)</param>
+                    <param id="1" name="Y">spr_player.Y - 30</param>
+                </action>
+                <action id="-3" name="Set position" sid="153823917687157" type="spr_playerHealthBar">
+                    <param id="0" name="X">spr_player.X</param>
+                    <param id="1" name="Y">spr_player.Y - 30</param>
+                </action>
+                <action id="-3" name="Set position" sid="458005739082045" type="txt_playerName">
+                    <param id="0" name="X">spr_player.X</param>
+                    <param id="1" name="Y">spr_player.Y - 45</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Functions</comment>
+        <event-block sid="643275711436819">
+            <conditions>
+                <condition id="0" name="On function" sid="989012113420488" type="Function">
+                    <param id="0" name="Name">&quot;Kill Player&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="943004413475718" type="spr_player" />
+            </actions>
+        </event-block>
+        <event-block sid="112689087086037">
+            <conditions>
+                <condition id="0" name="On function" sid="865666103086327" type="Function">
+                    <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="663084159640668" type="System">
+                    <param id="0" name="Variable">playerHealth</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                </action>
+                <action id="-5" name="Set width" sid="970916382885800" type="spr_playerHealth">
+                    <param id="0" name="Width">float(playerHealth)/PLAYER_MAX_HEALTH * spr_playerHealthBar.Width</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="248166642058865">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="553362176058334" type="System">
+                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="465899051727314" type="System">
+                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">60</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="625734558198886" type="spr_playerHealth">
+                            <param id="0" name="Animation">&quot;Yellow&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="782188739331679">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="643504030494043" type="System">
+                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="708462809983334" type="spr_playerHealth">
+                            <param id="0" name="Animation">&quot;Red&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="841953328101794">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="428582864236397" type="System">
+                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="125499364147146" type="Function">
+                            <param id="0" name="Name">&quot;Kill Player&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
