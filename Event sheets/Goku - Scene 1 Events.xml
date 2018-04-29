@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Scene 1 - Goku Events</name>
+    <name>Goku - Scene 1 Events</name>
     <events>
         <include>PlayerGoku Events</include>
     </events>
