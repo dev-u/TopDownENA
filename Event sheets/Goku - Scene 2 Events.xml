@@ -2,5 +2,7 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Goku - Scene 2 Events</name>
-    <events />
+    <events>
+        <include>Player Events</include>
+    </events>
 </c2eventsheet>

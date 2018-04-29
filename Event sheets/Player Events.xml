@@ -7,7 +7,7 @@
         <variable constant="0" name="playerTime" sid="997741563401588" static="0" type="number">0</variable>
         <variable constant="0" name="playerAttackUses" sid="540029755701373" static="0" type="number">100</variable>
         <variable constant="1" name="PLAYER_MAX_HEALTH" sid="441926436017199" static="0" type="number">100</variable>
-        <variable constant="0" name="playerHealth" sid="211717881661974" static="0" type="number">100</variable>
+        <variable constant="0" name="playerHealth" sid="211717881661974" static="0" type="number">150</variable>
         <comment>System events</comment>
         <event-block sid="402216485313124">
             <conditions>
