@@ -3,6 +3,17 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Goku - Scene 2 Events</name>
     <events>
-        <include>Player Events</include>
+        <include>Goku Attacks Events</include>
+        <event-block sid="412769264461542">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="439702397180010" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="629458093905687" type="spr_powerUp">
+                    <param id="0" name="X">random(32, LayoutWidth - 32)</param>
+                    <param id="1" name="Y">random(32, LayoutHeight - 32)</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

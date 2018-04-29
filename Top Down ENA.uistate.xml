@@ -10,9 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Main Menu</layout>
-        <layout active="1" order="2">Goku - Scene 1</layout>
-        <event-sheet order="1">Player Events</event-sheet>
+        <layout order="2">Goku - Scene 2</layout>
+        <event-sheet active="1" order="0">Goku Attacks Events</event-sheet>
+        <event-sheet order="1">Goku - Scene 2 Events</event-sheet>
+        <event-sheet order="3">Player Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -33,5 +34,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spr_playerHealth/" />
         <folder expanded="1" path="animation-folder/spr_playerHealthBar/" />
         <folder expanded="1" path="animation-folder/spr_playerSpecialAttackIcon/" />
+        <folder expanded="1" path="animation-folder/spr_gokuBasicAttack/" />
+        <folder expanded="1" path="animation-folder/spr_powerUp/" />
+        <folder expanded="1" path="animation-folder/spr_gokuSpecialAttack/" />
     </folders-expanded>
 </c2uistate>

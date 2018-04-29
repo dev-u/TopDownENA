@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player Events</name>
     <events>
+        <variable constant="0" name="playerDirection" sid="344796134814201" static="0" type="number">0</variable>
         <variable constant="0" name="playerCharacter" sid="867123669580584" static="0" type="text">Goku</variable>
         <variable constant="0" name="playerTime" sid="997741563401588" static="0" type="number">0</variable>
         <variable constant="0" name="playerAttackUses" sid="540029755701373" static="0" type="number">100</variable>
@@ -92,6 +93,10 @@
                     <param id="0" name="Animation">playerCharacter&amp;&quot;Up&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="-9" name="Set value" sid="173430979482200" type="System">
+                    <param id="0" name="Variable">playerDirection</param>
+                    <param id="1" name="Value">270</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="845058558311654">
@@ -104,6 +109,10 @@
                 <action id="4" name="Set animation" sid="991961590114403" type="spr_player">
                     <param id="0" name="Animation">playerCharacter&amp;&quot;Left&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="171504427093504" type="System">
+                    <param id="0" name="Variable">playerDirection</param>
+                    <param id="1" name="Value">180</param>
                 </action>
             </actions>
         </event-block>
@@ -118,6 +127,10 @@
                     <param id="0" name="Animation">playerCharacter&amp;&quot;Down&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="-9" name="Set value" sid="393897162778079" type="System">
+                    <param id="0" name="Variable">playerDirection</param>
+                    <param id="1" name="Value">90</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="593275718393485">
@@ -130,6 +143,10 @@
                 <action id="4" name="Set animation" sid="392439215154693" type="spr_player">
                     <param id="0" name="Animation">playerCharacter&amp;&quot;Right&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="958882692719029" type="System">
+                    <param id="0" name="Variable">playerDirection</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -263,6 +280,23 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="319889107173806">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="258833930930521" type="spr_player">
+                    <param id="0" name="Object">spr_powerUp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="764438178483159" type="spr_playerSpecialAttackIcon">
+                    <param id="0" name="Animation">&quot;Active&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="375750756559881" type="pgb_playerSpecialAttackProgress">
+                    <param id="0" name="Value">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="950766217618454" type="spr_powerUp" />
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
