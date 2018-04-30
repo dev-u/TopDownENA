@@ -79,6 +79,11 @@
                         <image-point name="Attack spawn" x="0.5" y="-0.21875" />
                     </frame>
                 </animation>
+                <animation framecount="3" loop="0" name="GokuUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="497712237050746" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
                 <animation framecount="4" loop="1" name="GokuLeft" pingpong="0" repeatcount="1" repeatto="0" sid="850945344208074" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <image-point name="Attack spawn" x="-0.75" y="0.5625" />
@@ -92,6 +97,11 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <image-point name="Attack spawn" x="0.5" y="-0.21875" />
                     </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="GokuLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="978363712090444" speed="5">
+                    <frame duration="1" hotspotX="0.388889" hotspotY="0.46875" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.46875" />
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.484848" />
                 </animation>
                 <animation framecount="4" loop="1" name="GokuRight" pingpong="0" repeatcount="1" repeatto="0" sid="936026346599800" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -131,6 +141,32 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="3" loop="0" name="GokuRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="637803298641933" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.46875">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.46875">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.484848">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
                 <animation framecount="4" loop="1" name="GokuDown" pingpong="0" repeatcount="1" repeatto="0" sid="943336602552402" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <image-point name="Attack spawn" x="0.5" y="1.21875" />
@@ -144,6 +180,11 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <image-point name="Attack spawn" x="0.5" y="-0.21875" />
                     </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="GokuDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="924731125245104" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -197,10 +238,32 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Active" pingpong="0" repeatcount="1" repeatto="0" sid="825970012769388" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\Cena 1\Hud\rosto_powerup.png">
+                        <collision-poly>
+                            <point x="0.031746" y="0.03125" />
+                            <point x="0.492063" y="0" />
+                            <point x="0.968254" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.968254" y="0.96875" />
+                            <point x="0.492063" y="1" />
+                            <point x="0.031746" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Inactive" pingpong="0" repeatcount="1" repeatto="0" sid="819742355871403" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\Cena 1\Hud\rosto_normal.png">
+                        <collision-poly>
+                            <point x="0.031746" y="0.03125" />
+                            <point x="0.492063" y="0" />
+                            <point x="0.968254" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.968254" y="0.96875" />
+                            <point x="0.492063" y="1" />
+                            <point x="0.031746" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -222,7 +285,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134593658181546" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.53125" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Goku\Misc\kamehameha_fim.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.947368" y="0.1" />
+                            <point x="1" y="0.5" />
+                            <point x="0.947368" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0526316" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -230,7 +304,18 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="168159034987295" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Hud\powerup.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.947368" y="0.1" />
+                            <point x="1" y="0.5" />
+                            <point x="0.947368" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0526316" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
