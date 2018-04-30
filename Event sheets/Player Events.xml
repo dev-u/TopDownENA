@@ -3,12 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player Events</name>
     <events>
-        <variable constant="0" name="playerDirection" sid="344796134814201" static="0" type="number">0</variable>
-        <variable constant="0" name="playerCharacter" sid="867123669580584" static="0" type="text">Goku</variable>
-        <variable constant="0" name="playerTime" sid="997741563401588" static="0" type="number">0</variable>
-        <variable constant="0" name="playerAttackUses" sid="540029755701373" static="0" type="number">100</variable>
+        <variable constant="0" name="num_playerDirection" sid="344796134814201" static="0" type="number">0</variable>
+        <variable constant="0" name="txt_playerCharacter" sid="867123669580584" static="0" type="text">Goku</variable>
+        <variable constant="0" name="num_playerTime" sid="997741563401588" static="0" type="number">0</variable>
+        <variable constant="0" name="num_playerAttackUses" sid="540029755701373" static="0" type="number">100</variable>
         <variable constant="1" name="PLAYER_MAX_HEALTH" sid="441926436017199" static="0" type="number">100</variable>
-        <variable constant="0" name="playerHealth" sid="211717881661974" static="0" type="number">150</variable>
+        <variable constant="0" name="num_playerHealth" sid="211717881661974" static="0" type="number">150</variable>
         <comment>System events</comment>
         <event-block sid="402216485313124">
             <conditions>
@@ -18,7 +18,7 @@
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="976893025690911" type="System">
-                    <param id="0" name="Variable">playerTime</param>
+                    <param id="0" name="Variable">num_playerTime</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -29,7 +29,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="245006879871302" type="txt_playerName">
-                    <param id="0" name="Text">playerName</param>
+                    <param id="0" name="Text">txt_playerName</param>
                 </action>
             </actions>
         </event-block>
@@ -90,11 +90,11 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="210716021559657" type="spr_player">
-                    <param id="0" name="Animation">playerCharacter&amp;&quot;Up&quot;</param>
+                    <param id="0" name="Animation">txt_playerCharacter&amp;&quot;Up&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="173430979482200" type="System">
-                    <param id="0" name="Variable">playerDirection</param>
+                    <param id="0" name="Variable">num_playerDirection</param>
                     <param id="1" name="Value">270</param>
                 </action>
             </actions>
@@ -107,11 +107,11 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="991961590114403" type="spr_player">
-                    <param id="0" name="Animation">playerCharacter&amp;&quot;Left&quot;</param>
+                    <param id="0" name="Animation">txt_playerCharacter&amp;&quot;Left&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="171504427093504" type="System">
-                    <param id="0" name="Variable">playerDirection</param>
+                    <param id="0" name="Variable">num_playerDirection</param>
                     <param id="1" name="Value">180</param>
                 </action>
             </actions>
@@ -124,11 +124,11 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="683873569304510" type="spr_player">
-                    <param id="0" name="Animation">playerCharacter&amp;&quot;Down&quot;</param>
+                    <param id="0" name="Animation">txt_playerCharacter&amp;&quot;Down&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="393897162778079" type="System">
-                    <param id="0" name="Variable">playerDirection</param>
+                    <param id="0" name="Variable">num_playerDirection</param>
                     <param id="1" name="Value">90</param>
                 </action>
             </actions>
@@ -141,11 +141,11 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="392439215154693" type="spr_player">
-                    <param id="0" name="Animation">playerCharacter&amp;&quot;Right&quot;</param>
+                    <param id="0" name="Animation">txt_playerCharacter&amp;&quot;Right&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Set value" sid="958882692719029" type="System">
-                    <param id="0" name="Variable">playerDirection</param>
+                    <param id="0" name="Variable">num_playerDirection</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -226,23 +226,23 @@
             </conditions>
             <actions>
                 <action id="-11" name="Subtract from" sid="663084159640668" type="System">
-                    <param id="0" name="Variable">playerHealth</param>
+                    <param id="0" name="Variable">num_playerHealth</param>
                     <param id="1" name="Value">Function.Param(0)</param>
                 </action>
                 <action id="-5" name="Set width" sid="970916382885800" type="spr_playerHealth">
-                    <param id="0" name="Width">float(playerHealth)/PLAYER_MAX_HEALTH * spr_playerHealthBar.Width</param>
+                    <param id="0" name="Width">float(num_playerHealth)/PLAYER_MAX_HEALTH * spr_playerHealthBar.Width</param>
                 </action>
             </actions>
             <sub-events>
                 <event-block sid="248166642058865">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="553362176058334" type="System">
-                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="0" name="Variable">num_playerHealth</param>
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">25</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="465899051727314" type="System">
-                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="0" name="Variable">num_playerHealth</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">60</param>
                         </condition>
@@ -257,7 +257,7 @@
                 <event-block sid="782188739331679">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="643504030494043" type="System">
-                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="0" name="Variable">num_playerHealth</param>
                             <param id="1" name="Comparison">2</param>
                             <param id="2" name="Value">25</param>
                         </condition>
@@ -272,7 +272,7 @@
                 <event-block sid="841953328101794">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="428582864236397" type="System">
-                            <param id="0" name="Variable">playerHealth</param>
+                            <param id="0" name="Variable">num_playerHealth</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>

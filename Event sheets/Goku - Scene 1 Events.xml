@@ -10,7 +10,7 @@
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="140250277916897" type="System">
-                    <param id="0" name="Variable">playerName</param>
+                    <param id="0" name="Variable">txt_playerName</param>
                     <param id="1" name="Value">&quot;Goku&quot;</param>
                 </action>
             </actions>

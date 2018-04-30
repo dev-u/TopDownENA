@@ -31,10 +31,10 @@
                     <param id="2" name="Image point">1</param>
                 </action>
                 <action id="-8" name="Set angle" sid="142895183868629" type="spr_gokuBasicAttack">
-                    <param id="0" name="Angle">playerDirection</param>
+                    <param id="0" name="Angle">num_playerDirection</param>
                 </action>
                 <action id="-11" name="Subtract from" sid="507191351575822" type="System">
-                    <param id="0" name="Variable">playerAttackUses</param>
+                    <param id="0" name="Variable">num_playerAttackUses</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="631090960145377" type="System">
@@ -45,7 +45,7 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Set text" sid="130833121555274" type="txt_playerAttackUses">
-                    <param id="0" name="Text">&quot;Ki: &quot; &amp; playerAttackUses</param>
+                    <param id="0" name="Text">&quot;Ki: &quot; &amp; num_playerAttackUses</param>
                 </action>
                 <action id="4" name="Set animation" sid="856303180399844" type="spr_player">
                     <param id="0" name="Animation">replace(spr_player.AnimationName, &quot;Attack&quot;, &quot;&quot;)</param>
