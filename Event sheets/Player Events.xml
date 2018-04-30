@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player Events</name>
     <events>
-        <variable constant="0" name="playerDirection" sid="344796134814201" static="0" type="number">0</variable>
+        <variable constant="0" name="playerDirection" sid="344796134814201" static="0" type="number">270</variable>
         <variable constant="0" name="playerCharacter" sid="867123669580584" static="0" type="text">Goku</variable>
         <variable constant="0" name="playerTime" sid="997741563401588" static="0" type="number">0</variable>
         <variable constant="0" name="playerAttackUses" sid="540029755701373" static="0" type="number">100</variable>
@@ -13,13 +13,16 @@
         <event-block sid="402216485313124">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="506421833358035" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
+                    <param id="0" name="Interval (seconds)">0.1</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="976893025690911" type="System">
                     <param id="0" name="Variable">playerTime</param>
-                    <param id="1" name="Value">1</param>
+                    <param id="1" name="Value">0.1</param>
+                </action>
+                <action id="0" name="Set text" sid="652563012161894" type="txt_playerTime">
+                    <param id="0" name="Text">&quot;Tempo: &quot; &amp; float(playerTime)</param>
                 </action>
             </actions>
         </event-block>
@@ -295,7 +298,7 @@
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="764438178483159" type="spr_playerSpecialAttackIcon">
-                    <param id="0" name="Animation">&quot;Active&quot;</param>
+                    <param id="0" name="Animation">playerCharacter&amp;&quot;Active&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="3" name="Set progress" sid="375750756559881" type="pgb_playerSpecialAttackProgress">

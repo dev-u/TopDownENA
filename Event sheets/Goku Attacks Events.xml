@@ -59,7 +59,7 @@
                     <param id="0" name="Key">69</param>
                 </condition>
                 <condition id="2" name="Is playing" sid="832732168123573" type="spr_playerSpecialAttackIcon">
-                    <param id="0" name="Animation">&quot;Active&quot;</param>
+                    <param id="0" name="Animation">playerCharacter &amp; &quot;Active&quot;</param>
                 </condition>
             </conditions>
             <actions />
@@ -83,18 +83,91 @@
                 <condition id="3" name="On key released" sid="563487731939609" type="Keyboard">
                     <param id="0" name="Key">69</param>
                 </condition>
+                <condition id="2" name="Is playing" sid="762274498910740" type="spr_playerSpecialAttackIcon">
+                    <param id="0" name="Animation">playerCharacter &amp; &quot;Active&quot;</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="268895202229457" type="spr_playerSpecialAttackIcon">
-                    <param id="0" name="Animation">&quot;Inactive&quot;</param>
+                    <param id="0" name="Animation">playerCharacter &amp; &quot;Inactive&quot;</param>
                     <param id="1" name="From">1</param>
-                </action>
-                <action id="-10" name="Set value" sid="186419815310998" type="spr_gokuSpecialAttack">
-                    <param id="0" name="Instance variable">damage</param>
-                    <param id="1" name="Value">pgb_playerSpecialAttackProgress.Progress</param>
                 </action>
                 <action id="3" name="Set progress" sid="376333540758079" type="pgb_playerSpecialAttackProgress">
                     <param id="0" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="367942693554321" type="spr_player">
+                    <param id="0" name="Animation">spr_player.AnimationName &amp; &quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="481707805634360" type="spr_player">
+                    <param id="0" name="Instance variable">canAttack</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="156379323432396" type="System">
+                    <param id="0" name="Seconds">spr_player.AnimationFrameCount / spr_player.AnimationSpeed - 0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="519358154860231" type="spr_player">
+                    <param id="0" name="Object">spr_gokuSpecialAttackTail</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="927520485026940" type="spr_player">
+                    <param id="0" name="Object">spr_gokuSpecialAttackBody</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="626912137379560" type="spr_player">
+                    <param id="0" name="Object">spr_gokuSpecialAttackHead</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="189818323358678" type="spr_gokuSpecialAttackTail">
+                    <param id="0" name="Angle">playerDirection</param>
+                </action>
+                <action id="-8" name="Set angle" sid="248528666553333" type="spr_gokuSpecialAttackBody">
+                    <param id="0" name="Angle">playerDirection</param>
+                </action>
+                <action id="-8" name="Set angle" sid="682174716859210" type="spr_gokuSpecialAttackHead">
+                    <param id="0" name="Angle">playerDirection</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="301466487230152">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="256590313700045" type="System">
+                    <param id="0" name="Interval (seconds)">0.02</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="187847553573448" type="spr_gokuSpecialAttackBody">
+                    <param id="0" name="Width">distance(spr_gokuSpecialAttackHead.X, spr_gokuSpecialAttackHead.Y, spr_gokuSpecialAttackTail.X, spr_gokuSpecialAttackTail.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875106726534339">
+            <conditions>
+                <condition id="-18" name="On created" sid="289159074983699" type="spr_gokuSpecialAttackHead" />
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="447907854746782" type="spr_player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="687569663119259" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Destroy" sid="510464531647064" type="spr_gokuSpecialAttackHead" />
+                <action id="-9" name="Destroy" sid="817408010626043" type="spr_gokuSpecialAttackBody" />
+                <action id="-9" name="Destroy" sid="453754175439832" type="spr_gokuSpecialAttackTail" />
+                <action behavior="8Direction" id="8" name="Set enabled" sid="565419038391759" type="spr_player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="713992840725478" type="spr_player">
+                    <param id="0" name="Instance variable">canAttack</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="215240570580189" type="spr_player">
+                    <param id="0" name="Animation">replace(spr_player.AnimationName, &quot;Attack&quot;, &quot;&quot;)</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
