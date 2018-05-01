@@ -304,7 +304,6 @@
                 <action id="3" name="Set progress" sid="375750756559881" type="pgb_playerSpecialAttackProgress">
                     <param id="0" name="Value">0</param>
                 </action>
-                <action id="-9" name="Destroy" sid="950766217618454" type="spr_powerUp" />
             </actions>
         </event-block>
     </events>

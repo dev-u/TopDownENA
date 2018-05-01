@@ -98,15 +98,36 @@
                     </frame>
                 </animation>
                 <animation framecount="4" loop="0" name="GokuSpecialUp" pingpong="0" repeatcount="1" repeatto="0" sid="525965759008254" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.447368" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.447368" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="0.5" y="-0.189189" />
+                        <image-point name="Special Attack spawn" x="0.5" y="-0.297297" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="0.5" y="-0.184211" />
+                        <image-point name="Special Attack spawn" x="0.5" y="-0.289474" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="0.5" y="-0.189189" />
+                        <image-point name="Special Attack spawn" x="0.5" y="-0.297297" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="0.5" y="-0.184211" />
+                        <image-point name="Special Attack spawn" x="0.5" y="-0.289474" />
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="0" name="GokuSpecialUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="821040659831745" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432" />
-                    <frame duration="1" hotspotX="0.529412" hotspotY="0.447368" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.461538" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="0.5" y="-0.189189" />
+                        <image-point name="Special Attack spawn" x="0.5" y="-0.297297" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="0.529412" y="-0.184211" />
+                        <image-point name="Special Attack spawn" x="0.529412" y="-0.289474" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.461538">
+                        <image-point name="Attack spawn" x="0.5" y="-0.179487" />
+                        <image-point name="Special Attack spawn" x="0.5" y="-0.307692" />
+                    </frame>
                 </animation>
                 <animation framecount="4" loop="1" name="GokuLeft" pingpong="0" repeatcount="1" repeatto="0" sid="850945344208074" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5625">
@@ -141,15 +162,36 @@
                     </frame>
                 </animation>
                 <animation framecount="4" loop="0" name="GokuSpecialLeft" pingpong="0" repeatcount="1" repeatto="0" sid="655715954174995" speed="5">
-                    <frame duration="1" hotspotX="0.4375" hotspotY="0.432432" />
-                    <frame duration="1" hotspotX="0.4375" hotspotY="0.447368" />
-                    <frame duration="1" hotspotX="0.4375" hotspotY="0.432432" />
-                    <frame duration="1" hotspotX="0.4375" hotspotY="0.447368" />
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="-0.5" y="0.567568" />
+                        <image-point name="Special Attack spawn" x="-0.6875" y="0.567568" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="-0.5" y="0.578947" />
+                        <image-point name="Special Attack spawn" x="-0.6875" y="0.578947" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="-0.5" y="0.567568" />
+                        <image-point name="Special Attack spawn" x="-0.6875" y="0.567568" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="-0.5" y="0.578947" />
+                        <image-point name="Special Attack spawn" x="-0.6875" y="0.578947" />
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="0" name="GokuSpecialLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="568105449523872" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.3125" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="-0.5" y="0.567568" />
+                        <image-point name="Special Attack spawn" x="-0.6875" y="0.567568" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.416667">
+                        <image-point name="Attack spawn" x="-0.5" y="0.555556" />
+                        <image-point name="Special Attack spawn" x="-0.708333" y="0.555556" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.416667">
+                        <image-point name="Attack spawn" x="-0.52" y="0.555556" />
+                        <image-point name="Special Attack spawn" x="-0.68" y="0.555556" />
+                    </frame>
                 </animation>
                 <animation framecount="4" loop="1" name="GokuRight" pingpong="0" repeatcount="1" repeatto="0" sid="936026346599800" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -227,6 +269,8 @@
                 </animation>
                 <animation framecount="4" loop="0" name="GokuSpecialRight" pingpong="0" repeatcount="1" repeatto="0" sid="128122457595917" speed="5">
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="1.625" y="0.567568" />
+                        <image-point name="Special Attack spawn" x="1.8125" y="0.567568" />
                         <collision-poly>
                             <point x="1" y="0.972973" />
                             <point x="0.0625" y="0.972973" />
@@ -235,6 +279,8 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="1.625" y="0.578947" />
+                        <image-point name="Special Attack spawn" x="1.8125" y="0.578947" />
                         <collision-poly>
                             <point x="1" y="0.973684" />
                             <point x="0.0625" y="0.973684" />
@@ -243,6 +289,8 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="1.625" y="0.567568" />
+                        <image-point name="Special Attack spawn" x="1.8125" y="0.567568" />
                         <collision-poly>
                             <point x="1" y="0.972973" />
                             <point x="0.0625" y="0.972973" />
@@ -251,6 +299,8 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="1.625" y="0.578947" />
+                        <image-point name="Special Attack spawn" x="1.8125" y="0.578947" />
                         <collision-poly>
                             <point x="1" y="0.973684" />
                             <point x="0.0625" y="0.973684" />
@@ -261,6 +311,8 @@
                 </animation>
                 <animation framecount="3" loop="0" name="GokuSpecialRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="319798746211450" speed="5">
                     <frame duration="1" hotspotX="0.6875" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="1.625" y="0.567568" />
+                        <image-point name="Special Attack spawn" x="1.8125" y="0.567568" />
                         <collision-poly>
                             <point x="1" y="0.972973" />
                             <point x="0" y="0.972973" />
@@ -269,6 +321,8 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.416667">
+                        <image-point name="Attack spawn" x="1.625" y="0.555556" />
+                        <image-point name="Special Attack spawn" x="1.83333" y="0.555556" />
                         <collision-poly>
                             <point x="1" y="0.972222" />
                             <point x="0" y="0.972222" />
@@ -277,6 +331,8 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.52" hotspotY="0.416667">
+                        <image-point name="Attack spawn" x="1.64" y="0.555556" />
+                        <image-point name="Special Attack spawn" x="1.8" y="0.555556" />
                         <collision-poly>
                             <point x="1" y="0.972222" />
                             <point x="0.04" y="0.972222" />
@@ -318,15 +374,33 @@
                     </frame>
                 </animation>
                 <animation framecount="4" loop="0" name="GokuSpecialDown" pingpong="0" repeatcount="1" repeatto="0" sid="268128052252981" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.447368" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.447368" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="0.5" y="1.10811" />
+                        <image-point name="Special Attack spawn" x="0.5" y="1.18919" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="0.5" y="1.10526" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="0.5" y="1.10811" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.447368">
+                        <image-point name="Attack spawn" x="0.5" y="1.10526" />
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="0" name="GokuSpecialDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="440301927531485" speed="5">
-                    <frame duration="1" hotspotX="0.529412" hotspotY="0.416667" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.416667">
+                        <image-point name="Attack spawn" x="0.529412" y="1.13889" />
+                        <image-point name="Special Attack spawn" x="0.529412" y="1.22222" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="0.555556" y="1.13514" />
+                        <image-point name="Special Attack spawn" x="0.555556" y="1.21622" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
+                        <image-point name="Attack spawn" x="0.555556" y="1.13514" />
+                        <image-point name="Special Attack spawn" x="0.555556" y="1.21622" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -429,14 +503,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134593658181546" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Goku\Misc\ataque.png">
                         <collision-poly>
-                            <point x="0.0789474" y="0.123529" />
-                            <point x="0.5" y="0.0294118" />
-                            <point x="0.921052" y="0.123529" />
-                            <point x="0.970588" y="0.5" />
-                            <point x="0.921052" y="0.876471" />
-                            <point x="0.5" y="0.970588" />
-                            <point x="0.0789474" y="0.876471" />
-                            <point x="0.0294118" y="0.5" />
+                            <point x="0.111336" y="0.152488" />
+                            <point x="0.5" y="0.0656109" />
+                            <point x="0.888663" y="0.152488" />
+                            <point x="0.934389" y="0.5" />
+                            <point x="0.888663" y="0.847512" />
+                            <point x="0.5" y="0.934389" />
+                            <point x="0.111336" y="0.847512" />
+                            <point x="0.0656109" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -463,6 +537,9 @@
         </object-type>
         <object-type name="spr_gokuSpecialAttackHead" sid="478183700560544">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="damage" sid="185549866400123" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="888348018902060">
                     <behavior id="Bullet" />
