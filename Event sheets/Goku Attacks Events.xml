@@ -59,7 +59,11 @@
                     <param id="0" name="Key">69</param>
                 </condition>
                 <condition id="2" name="Is playing" sid="832732168123573" type="spr_playerSpecialAttackIcon">
+<<<<<<< HEAD
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Active&quot;</param>
+=======
+                    <param id="0" name="Animation">&quot;Active&quot;</param>
+>>>>>>> parent of 8c69c8b... [FIX] conflitos resolvidos
                 </condition>
             </conditions>
             <actions />
@@ -83,6 +87,7 @@
                 <condition id="3" name="On key released" sid="563487731939609" type="Keyboard">
                     <param id="0" name="Key">69</param>
                 </condition>
+<<<<<<< HEAD
                 <condition id="2" name="Is playing" sid="762274498910740" type="spr_playerSpecialAttackIcon">
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Active&quot;</param>
                 </condition>
@@ -90,12 +95,19 @@
             <actions>
                 <action id="4" name="Set animation" sid="268895202229457" type="spr_playerSpecialAttackIcon">
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;)  &amp; &quot;Inactive&quot;</param>
+=======
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="268895202229457" type="spr_playerSpecialAttackIcon">
+                    <param id="0" name="Animation">&quot;Inactive&quot;</param>
+>>>>>>> parent of 8c69c8b... [FIX] conflitos resolvidos
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-10" name="Set value" sid="682747549782803" type="spr_gokuSpecialAttackHead">
+                <action id="-10" name="Set value" sid="186419815310998" type="spr_gokuSpecialAttack">
                     <param id="0" name="Instance variable">damage</param>
                     <param id="1" name="Value">pgb_playerSpecialAttackProgress.Progress</param>
                 </action>
+<<<<<<< HEAD
                 <action id="-9" name="Set value" sid="707858968585406" type="System">
                     <param id="0" name="Variable">playerCharacter</param>
                     <param id="1" name="Value">&quot;Goku&quot;</param>
@@ -195,6 +207,11 @@
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="174865308160738" type="spr_powerUp" />
+=======
+                <action id="3" name="Set progress" sid="376333540758079" type="pgb_playerSpecialAttackProgress">
+                    <param id="0" name="Value">0</param>
+                </action>
+>>>>>>> parent of 8c69c8b... [FIX] conflitos resolvidos
             </actions>
         </event-block>
     </events>

@@ -95,7 +95,7 @@
                         <x>928</x>
                         <y>0</y>
                         <z>0</z>
-                        <width>160</width>
+                        <width>96</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -107,7 +107,7 @@
                 <instance type="spr_playerSpecialAttackIcon" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>GokuInactive</initial-animation>
+                        <initial-animation>Inactive</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -137,7 +137,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>672</x>
-                        <y>-32</y>
+                        <y>-64</y>
                         <z>0</z>
                         <width>38</width>
                         <height>20</height>
@@ -191,6 +191,31 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="spr_gokuSpecialAttack" uid="22">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <damage>0</damage>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>1088</width>
+                        <height>40</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1.075000048</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="spr_playerHealth" uid="26">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -201,8 +226,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>896</x>
-                        <y>-32</y>
+                        <x>832</x>
+                        <y>-96</y>
                         <z>0</z>
                         <width>32</width>
                         <height>8</height>
@@ -223,8 +248,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>864</x>
-                        <y>-32</y>
+                        <x>832</x>
+                        <y>-64</y>
                         <z>0</z>
                         <width>34</width>
                         <height>11</height>
@@ -262,12 +287,12 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>480</x>
-                        <y>-32</y>
+                        <y>-96</y>
                         <z>0</z>
-                        <width>26</width>
-                        <height>26</height>
+                        <width>32</width>
+                        <height>32</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.53125</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
