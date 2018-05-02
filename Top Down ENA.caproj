@@ -97,7 +97,7 @@
                         <image-point name="Special Attack spawn" x="0.5" y="-0.3125" />
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="GokuSpecialUp" pingpong="0" repeatcount="1" repeatto="0" sid="525965759008254" speed="5">
+                <animation framecount="4" loop="1" name="GokuSpecialUp" pingpong="0" repeatcount="1" repeatto="0" sid="525965759008254" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
                         <image-point name="Attack spawn" x="0.5" y="-0.189189" />
                         <image-point name="Special Attack spawn" x="0.5" y="-0.297297" />
@@ -161,7 +161,7 @@
                         <image-point name="Special Attack spawn" x="-0.6" y="0.454545" />
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="GokuSpecialLeft" pingpong="0" repeatcount="1" repeatto="0" sid="655715954174995" speed="5">
+                <animation framecount="4" loop="1" name="GokuSpecialLeft" pingpong="0" repeatcount="1" repeatto="0" sid="655715954174995" speed="5">
                     <frame duration="1" hotspotX="0.4375" hotspotY="0.432432">
                         <image-point name="Attack spawn" x="-0.5" y="0.567568" />
                         <image-point name="Special Attack spawn" x="-0.6875" y="0.567568" />
@@ -267,7 +267,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="GokuSpecialRight" pingpong="0" repeatcount="1" repeatto="0" sid="128122457595917" speed="5">
+                <animation framecount="4" loop="1" name="GokuSpecialRight" pingpong="0" repeatcount="1" repeatto="0" sid="128122457595917" speed="5">
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.432432">
                         <image-point name="Attack spawn" x="1.625" y="0.567568" />
                         <image-point name="Special Attack spawn" x="1.8125" y="0.567568" />
@@ -373,7 +373,7 @@
                         <image-point name="Special Attack spawn" x="0.5" y="1.28125" />
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="GokuSpecialDown" pingpong="0" repeatcount="1" repeatto="0" sid="268128052252981" speed="5">
+                <animation framecount="4" loop="1" name="GokuSpecialDown" pingpong="0" repeatcount="1" repeatto="0" sid="268128052252981" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
                         <image-point name="Attack spawn" x="0.5" y="1.10811" />
                         <image-point name="Special Attack spawn" x="0.5" y="1.18919" />
@@ -598,6 +598,30 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="spr_enemyRanged" sid="812265276876137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="CellUp" pingpong="0" repeatcount="1" repeatto="0" sid="903000958503376" speed="5">
+                    <frame duration="1" hotspotX="0.348837" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Parado\cell parado cima.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="CellLeft" pingpong="0" repeatcount="1" repeatto="0" sid="201613269306752" speed="5">
+                    <frame duration="1" hotspotX="0.295455" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Parado\cell parado lado.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="CellRight" pingpong="0" repeatcount="1" repeatto="0" sid="367490886347954" speed="5">
+                    <frame duration="1" hotspotX="0.704545" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Parado\cell parado lado.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="CellDown" pingpong="0" repeatcount="1" repeatto="0" sid="965449672798529" speed="5">
+                    <frame duration="1" hotspotX="0.627907" hotspotY="0.403846" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -613,6 +637,7 @@
         <event-sheet>Goku - Scene 2 Events.xml</event-sheet>
         <event-sheet>Goku - Scene 3 Events.xml</event-sheet>
         <event-sheet>Goku Attacks Events.xml</event-sheet>
+        <event-sheet>Enemy Ranged Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
