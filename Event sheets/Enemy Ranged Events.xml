@@ -4,52 +4,72 @@
     <name>Enemy Ranged Events</name>
     <events>
         <variable constant="0" name="enemyRangedCharacter" sid="525425420245599" static="0" type="text">Cell</variable>
-        <event-block sid="494292260540741">
+        <event-block sid="107519890655283">
             <conditions>
-                <condition id="-21" name="Is between values" sid="578369089166049" type="System">
+                <condition id="-21" name="Is between values" sid="897620533275205" type="System">
                     <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
-                    <param id="1" name="Lower bound">0</param>
-                    <param id="2" name="Upper bound">89</param>
+                    <param id="1" name="Lower bound">-135</param>
+                    <param id="2" name="Upper bound">-45</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="772721307433921" type="spr_enemyRanged">
+                <action id="4" name="Set animation" sid="133552287364928" type="spr_enemyRanged">
+                    <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="121195768873391">
+            <conditions>
+                <condition id="-21" name="Is between values" sid="963774930316824" type="System">
+                    <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
+                    <param id="1" name="Lower bound">-180</param>
+                    <param id="2" name="Upper bound">-135</param>
+                </condition>
+                <condition id="-21" name="Is between values" sid="363121183842388" type="System">
+                    <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
+                    <param id="1" name="Lower bound">135</param>
+                    <param id="2" name="Upper bound">180</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="548514565904128" type="spr_enemyRanged">
+                    <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Left&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="902450365764126">
+            <conditions>
+                <condition id="-21" name="Is between values" sid="246141479361444" type="System">
+                    <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
+                    <param id="1" name="Lower bound">45</param>
+                    <param id="2" name="Upper bound">135</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="241858014389676" type="spr_enemyRanged">
                     <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Down&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="121195768873391">
+        <event-block any="1" sid="883006405196410">
             <conditions>
-                <condition id="-21" name="Is between values" sid="963774930316824" type="System">
+                <condition id="-21" name="Is between values" sid="263751590295622" type="System">
                     <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
-                    <param id="1" name="Lower bound">90</param>
-                    <param id="2" name="Upper bound">179</param>
+                    <param id="1" name="Lower bound">-45</param>
+                    <param id="2" name="Upper bound">0</param>
                 </condition>
-            </conditions>
-            <actions />
-        </event-block>
-        <event-block sid="288701635046557">
-            <conditions>
-                <condition id="-21" name="Is between values" sid="271585192000897" type="System">
+                <condition id="-21" name="Is between values" sid="355305992346337" type="System">
                     <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
-                    <param id="1" name="Lower bound">180</param>
-                    <param id="2" name="Upper bound">269</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
-        <event-block sid="544602697665429">
-            <conditions>
-                <condition id="-21" name="Is between values" sid="889750898238215" type="System">
-                    <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
-                    <param id="1" name="Lower bound">270</param>
-                    <param id="2" name="Upper bound">359</param>
+                    <param id="1" name="Lower bound">0</param>
+                    <param id="2" name="Upper bound">45</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="175964956534694" type="spr_enemyRanged">
-                    <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Up&quot;</param>
+                <action id="4" name="Set animation" sid="449203298953990" type="spr_enemyRanged">
+                    <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Right&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>

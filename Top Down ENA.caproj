@@ -23,6 +23,7 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -600,6 +601,14 @@
         </object-type>
         <object-type name="spr_enemyRanged" sid="812265276876137">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="631502522600441" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="746135367198552">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="CellUp" pingpong="0" repeatcount="1" repeatto="0" sid="903000958503376" speed="5">
                     <frame duration="1" hotspotX="0.348837" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Parado\cell parado cima.png" />
