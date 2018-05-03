@@ -13,6 +13,22 @@
                     <param id="0" name="Variable">playerName</param>
                     <param id="1" name="Value">&quot;Goku&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="344697217577758" type="System">
+                    <param id="0" name="Variable">enemyRangedHealth</param>
+                    <param id="1" name="Value">80</param>
+                </action>
+                <action id="-9" name="Set value" sid="810390973349498" type="System">
+                    <param id="0" name="Variable">enemyRangedCharacter</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+                <action id="-9" name="Set value" sid="609666460421921" type="System">
+                    <param id="0" name="Variable">enemyRangedCharacter</param>
+                    <param id="1" name="Value">&quot;Cell&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="500655581409029" type="System">
+                    <param id="0" name="Variable">PLAYER_MAX_HEALTH</param>
+                    <param id="1" name="Value">150</param>
+                </action>
             </actions>
         </event-block>
     </events>

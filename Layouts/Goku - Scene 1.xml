@@ -38,6 +38,7 @@
                     </properties>
                     <instance-variables>
                         <canAttack>true</canAttack>
+                        <specialAttackDamage>0</specialAttackDamage>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">

@@ -23,6 +23,7 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -34,6 +35,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Main Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -55,6 +57,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="canAttack" sid="500298270301480" type="boolean" />
+                <instance-variable name="specialAttackDamage" sid="144110612421129" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="820716886951766">
@@ -97,7 +100,7 @@
                         <image-point name="Special Attack spawn" x="0.5" y="-0.3125" />
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="GokuSpecialUp" pingpong="0" repeatcount="1" repeatto="0" sid="525965759008254" speed="5">
+                <animation framecount="4" loop="1" name="GokuSpecialUp" pingpong="0" repeatcount="1" repeatto="0" sid="525965759008254" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
                         <image-point name="Attack spawn" x="0.5" y="-0.189189" />
                         <image-point name="Special Attack spawn" x="0.5" y="-0.297297" />
@@ -161,7 +164,7 @@
                         <image-point name="Special Attack spawn" x="-0.6" y="0.454545" />
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="GokuSpecialLeft" pingpong="0" repeatcount="1" repeatto="0" sid="655715954174995" speed="5">
+                <animation framecount="4" loop="1" name="GokuSpecialLeft" pingpong="0" repeatcount="1" repeatto="0" sid="655715954174995" speed="5">
                     <frame duration="1" hotspotX="0.4375" hotspotY="0.432432">
                         <image-point name="Attack spawn" x="-0.5" y="0.567568" />
                         <image-point name="Special Attack spawn" x="-0.6875" y="0.567568" />
@@ -267,7 +270,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="GokuSpecialRight" pingpong="0" repeatcount="1" repeatto="0" sid="128122457595917" speed="5">
+                <animation framecount="4" loop="1" name="GokuSpecialRight" pingpong="0" repeatcount="1" repeatto="0" sid="128122457595917" speed="5">
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.432432">
                         <image-point name="Attack spawn" x="1.625" y="0.567568" />
                         <image-point name="Special Attack spawn" x="1.8125" y="0.567568" />
@@ -373,7 +376,7 @@
                         <image-point name="Special Attack spawn" x="0.5" y="1.28125" />
                     </frame>
                 </animation>
-                <animation framecount="4" loop="0" name="GokuSpecialDown" pingpong="0" repeatcount="1" repeatto="0" sid="268128052252981" speed="5">
+                <animation framecount="4" loop="1" name="GokuSpecialDown" pingpong="0" repeatcount="1" repeatto="0" sid="268128052252981" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.432432">
                         <image-point name="Attack spawn" x="0.5" y="1.10811" />
                         <image-point name="Special Attack spawn" x="0.5" y="1.18919" />
@@ -537,9 +540,6 @@
         </object-type>
         <object-type name="spr_gokuSpecialAttackHead" sid="478183700560544">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="damage" sid="185549866400123" type="number" />
-            </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="888348018902060">
                     <behavior id="Bullet" />
@@ -598,6 +598,191 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="spr_enemyRanged" sid="812265276876137">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="631502522600441" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="746135367198552">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="CellUp" pingpong="0" repeatcount="1" repeatto="0" sid="903000958503376" speed="5">
+                    <frame duration="1" hotspotX="0.348837" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Parado\cell parado cima.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="CellUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="404480417169628" speed="5">
+                    <frame duration="1" hotspotX="0.435897" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Atacando\cell ataque cima.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="CellLeft" pingpong="0" repeatcount="1" repeatto="0" sid="201613269306752" speed="5">
+                    <frame duration="1" hotspotX="0.295455" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Parado\cell parado lado.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="CellLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="783823256320447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.415094" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Atacando\cell ataque lado.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="CellRight" pingpong="0" repeatcount="1" repeatto="0" sid="367490886347954" speed="5">
+                    <frame duration="1" hotspotX="0.704545" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Parado\cell parado lado.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="CellRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="423175232608233" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.415094" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Atacando\cell ataque lado.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="CellDown" pingpong="0" repeatcount="1" repeatto="0" sid="965449672798529" speed="5">
+                    <frame duration="1" hotspotX="0.627907" hotspotY="0.403846" />
+                </animation>
+                <animation framecount="1" loop="0" name="CellDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="439758883925787" speed="5">
+                    <frame duration="1" hotspotX="0.605263" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Atacando\cell ataque baixo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_enemyRangedAttack" sid="468564116337178">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="284234105935673">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="910630526818857">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="CellAttack" pingpong="0" repeatcount="1" repeatto="0" sid="311046434284350" speed="5">
+                    <frame duration="1" hotspotX="0.59375" hotspotY="0.34375" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_background" sid="133220609901960">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725329819927322" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Background\bg1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_enemyMelee" sid="383262279028525">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="992321969437380" type="number" />
+                <instance-variable name="canAttack" sid="441653054579470" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="933205574574318">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="872050724782467">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="SaibamenUp" pingpong="0" repeatcount="1" repeatto="0" sid="993623965168221" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.451613" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.451613" />
+                </animation>
+                <animation framecount="3" loop="0" name="SaibamenUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="464061398356640" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.392857" />
+                </animation>
+                <animation framecount="4" loop="1" name="SaibamenLeft" pingpong="0" repeatcount="1" repeatto="0" sid="502046314412907" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.451613" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.451613" />
+                </animation>
+                <animation framecount="3" loop="0" name="SaibamenLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="238339910786234" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.588235" hotspotY="0.392857" />
+                </animation>
+                <animation framecount="4" loop="1" name="SaibamenRight" pingpong="0" repeatcount="1" repeatto="0" sid="801124823526811" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.433333">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.451613">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.433333">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.451613">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="SaibamenRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="439872828893297" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.433333">
+                        <collision-poly>
+                            <point x="1" y="0.966667" />
+                            <point x="0" y="0.966667" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.413793">
+                        <collision-poly>
+                            <point x="1" y="0.965517" />
+                            <point x="0" y="0.965517" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.411765" hotspotY="0.392857">
+                        <collision-poly>
+                            <point x="0.941176" y="0.964286" />
+                            <point x="0" y="0.964286" />
+                            <point x="0" y="0" />
+                            <point x="0.941176" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="SaibamenDown" pingpong="0" repeatcount="1" repeatto="0" sid="449206968266158" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.451613" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.451613" />
+                </animation>
+                <animation framecount="3" loop="0" name="SaibamenDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="520815742268233" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.37037" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -613,6 +798,7 @@
         <event-sheet>Goku - Scene 2 Events.xml</event-sheet>
         <event-sheet>Goku - Scene 3 Events.xml</event-sheet>
         <event-sheet>Goku Attacks Events.xml</event-sheet>
+        <event-sheet>Commom Enemies Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />

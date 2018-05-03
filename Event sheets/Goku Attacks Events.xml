@@ -92,9 +92,9 @@
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;)  &amp; &quot;Inactive&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-10" name="Set value" sid="682747549782803" type="spr_gokuSpecialAttackHead">
-                    <param id="0" name="Instance variable">damage</param>
-                    <param id="1" name="Value">pgb_playerSpecialAttackProgress.Progress</param>
+                <action id="-10" name="Set value" sid="682747549782803" type="spr_player">
+                    <param id="0" name="Instance variable">specialAttackDamage</param>
+                    <param id="1" name="Value">pgb_playerSpecialAttackProgress.Progress * 2</param>
                 </action>
                 <action id="-9" name="Set value" sid="707858968585406" type="System">
                     <param id="0" name="Variable">playerCharacter</param>
