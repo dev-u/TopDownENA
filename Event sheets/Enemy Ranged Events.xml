@@ -13,6 +13,7 @@
                     <param id="1" name="Lower bound">-135</param>
                     <param id="2" name="Upper bound">-45</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="159760537469710" type="System" />
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="133552287364928" type="spr_enemyRanged">
@@ -21,18 +22,14 @@
                 </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="121195768873391">
+        <event-block sid="121195768873391">
             <conditions>
-                <condition id="-21" name="Is between values" sid="963774930316824" type="System">
-                    <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
-                    <param id="1" name="Lower bound">-180</param>
-                    <param id="2" name="Upper bound">-135</param>
-                </condition>
                 <condition id="-21" name="Is between values" sid="363121183842388" type="System">
-                    <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
+                    <param id="0" name="Value">abs(angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y))</param>
                     <param id="1" name="Lower bound">135</param>
                     <param id="2" name="Upper bound">180</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="751268166868285" type="System" />
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="548514565904128" type="spr_enemyRanged">
@@ -48,6 +45,7 @@
                     <param id="1" name="Lower bound">45</param>
                     <param id="2" name="Upper bound">135</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="354422618513000" type="System" />
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="241858014389676" type="spr_enemyRanged">
@@ -56,18 +54,14 @@
                 </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="883006405196410">
+        <event-block sid="883006405196410">
             <conditions>
-                <condition id="-21" name="Is between values" sid="263751590295622" type="System">
-                    <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
-                    <param id="1" name="Lower bound">-45</param>
-                    <param id="2" name="Upper bound">0</param>
-                </condition>
                 <condition id="-21" name="Is between values" sid="355305992346337" type="System">
-                    <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
+                    <param id="0" name="Value">abs(angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y))</param>
                     <param id="1" name="Lower bound">0</param>
                     <param id="2" name="Upper bound">45</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="818846666484786" type="System" />
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="449203298953990" type="spr_enemyRanged">
@@ -106,6 +100,17 @@
                 <action id="-22" name="Set angle toward position" sid="379813357260670" type="spr_enemyRangedAttack">
                     <param id="0" name="X">spr_player.X</param>
                     <param id="1" name="Y">spr_player.Y</param>
+                </action>
+                <action id="4" name="Set animation" sid="491613844857135" type="spr_enemyRanged">
+                    <param id="0" name="Animation">spr_enemyRanged.AnimationName &amp; &quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="959598947394884" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="4" name="Set animation" sid="377843448159956" type="spr_enemyRanged">
+                    <param id="0" name="Animation">replace(spr_enemyRanged.AnimationName, &quot;Attack&quot;, &quot;&quot;)</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
