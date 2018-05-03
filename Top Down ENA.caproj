@@ -35,6 +35,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Main Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -642,6 +643,14 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="CellAttack" pingpong="0" repeatcount="1" repeatto="0" sid="311046434284350" speed="5">
                     <frame duration="1" hotspotX="0.59375" hotspotY="0.34375" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_background" sid="133220609901960">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725329819927322" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Background\bg1.png" />
                 </animation>
             </animation-folder>
         </object-type>
