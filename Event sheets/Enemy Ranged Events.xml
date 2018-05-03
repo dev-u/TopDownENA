@@ -8,67 +8,115 @@
         <variable constant="0" name="enemyRangedCharacter" sid="525425420245599" static="0" type="text">Cell</variable>
         <event-block sid="107519890655283">
             <conditions>
+                <condition id="-24" name="For Each (ordered)" sid="210250971889643" type="System">
+                    <param id="0" name="Object">spr_enemyRanged</param>
+                    <param id="1" name="Expression">0</param>
+                    <param id="2" name="Order">0</param>
+                </condition>
                 <condition id="-21" name="Is between values" sid="897620533275205" type="System">
                     <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
                     <param id="1" name="Lower bound">-135</param>
                     <param id="2" name="Upper bound">-45</param>
                 </condition>
-                <condition id="-4" name="Trigger once while true" sid="159760537469710" type="System" />
             </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="133552287364928" type="spr_enemyRanged">
-                    <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Up&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="119497867538719">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="159760537469710" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="133552287364928" type="spr_enemyRanged">
+                            <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="121195768873391">
             <conditions>
+                <condition id="-24" name="For Each (ordered)" sid="648888110920442" type="System">
+                    <param id="0" name="Object">spr_enemyRanged</param>
+                    <param id="1" name="Expression">0</param>
+                    <param id="2" name="Order">0</param>
+                </condition>
                 <condition id="-21" name="Is between values" sid="363121183842388" type="System">
                     <param id="0" name="Value">abs(angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y))</param>
                     <param id="1" name="Lower bound">135</param>
                     <param id="2" name="Upper bound">180</param>
                 </condition>
-                <condition id="-4" name="Trigger once while true" sid="751268166868285" type="System" />
             </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="548514565904128" type="spr_enemyRanged">
-                    <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Left&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="223160098657713">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="751268166868285" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="548514565904128" type="spr_enemyRanged">
+                            <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="902450365764126">
             <conditions>
+                <condition id="-24" name="For Each (ordered)" sid="523867624100851" type="System">
+                    <param id="0" name="Object">spr_enemyRanged</param>
+                    <param id="1" name="Expression">0</param>
+                    <param id="2" name="Order">0</param>
+                </condition>
                 <condition id="-21" name="Is between values" sid="246141479361444" type="System">
                     <param id="0" name="Value">angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y)</param>
                     <param id="1" name="Lower bound">45</param>
                     <param id="2" name="Upper bound">135</param>
                 </condition>
-                <condition id="-4" name="Trigger once while true" sid="354422618513000" type="System" />
             </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="241858014389676" type="spr_enemyRanged">
-                    <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Down&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="956275110412482">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="354422618513000" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="241858014389676" type="spr_enemyRanged">
+                            <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Down&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="883006405196410">
             <conditions>
+                <condition id="-24" name="For Each (ordered)" sid="178893711319799" type="System">
+                    <param id="0" name="Object">spr_enemyRanged</param>
+                    <param id="1" name="Expression">0</param>
+                    <param id="2" name="Order">0</param>
+                </condition>
                 <condition id="-21" name="Is between values" sid="355305992346337" type="System">
                     <param id="0" name="Value">abs(angle(spr_enemyRanged.X, spr_enemyRanged.Y, spr_player.X, spr_player.Y))</param>
                     <param id="1" name="Lower bound">0</param>
                     <param id="2" name="Upper bound">45</param>
                 </condition>
-                <condition id="-4" name="Trigger once while true" sid="818846666484786" type="System" />
             </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="449203298953990" type="spr_enemyRanged">
-                    <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Right&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="898999072863602">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="818846666484786" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="449203298953990" type="spr_enemyRanged">
+                            <param id="0" name="Animation">enemyRangedCharacter &amp; &quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="738759626509339">
             <conditions>
@@ -137,38 +185,14 @@
             <actions>
                 <action id="0" name="Call function" sid="988643265400539" type="Function">
                     <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
-                    <param id="1" name="Parameter {n}">spr_gokuBasicAttack.damage</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="440204704582623" type="spr_enemyRanged">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">spr_gokuBasicAttack.damage</param>
                 </action>
                 <action id="-9" name="Destroy" sid="893037275771931" type="spr_gokuBasicAttack" />
             </actions>
-        </event-block>
-        <event-block sid="878751042666292">
-            <conditions>
-                <condition id="0" name="On function" sid="171824562208922" type="Function">
-                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="440204704582623" type="spr_enemyRanged">
-                    <param id="0" name="Instance variable">health</param>
-                    <param id="1" name="Value">Function.Param(0)</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="185902815767958">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="994092648912310" type="spr_enemyRanged">
-                            <param id="0" name="Instance variable">health</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="641281752012694" type="spr_enemyRanged" />
-                        <action id="-9" name="Destroy" sid="987381007685278" type="spr_enemyRangedAttack" />
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-block any="1" sid="655048288714371">
             <conditions>
@@ -185,9 +209,36 @@
             <actions>
                 <action id="0" name="Call function" sid="502786132504027" type="Function">
                     <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
-                    <param id="1" name="Parameter {n}">spr_player.specialAttackDamage</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="352431947359216" type="spr_enemyRanged">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">spr_player.specialAttackDamage</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="878751042666292">
+            <conditions>
+                <condition id="0" name="On function" sid="171824562208922" type="Function">
+                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="185902815767958">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="994092648912310" type="spr_enemyRanged">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="641281752012694" type="spr_enemyRanged" />
+                        <action id="-9" name="Destroy" sid="987381007685278" type="spr_enemyRangedAttack" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

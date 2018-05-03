@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Goku - Scene 2 Events</name>
     <events>
+        <include>Enemy Melee Events</include>
         <include>Enemy Ranged Events</include>
         <include>Goku Attacks Events</include>
         <event-block sid="412769264461542">
