@@ -13,8 +13,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Goku - Scene 2</layout>
         <event-sheet order="1">Player Events</event-sheet>
         <event-sheet order="2">Goku Attacks Events</event-sheet>
-        <event-sheet order="3">Enemy Ranged Events</event-sheet>
-        <event-sheet active="1" order="4">Goku - Scene 2 Events</event-sheet>
+        <event-sheet active="1" order="3">Enemy Ranged Events</event-sheet>
+        <event-sheet order="4">Goku - Scene 2 Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

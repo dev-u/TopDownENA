@@ -123,5 +123,66 @@
                 <action id="-9" name="Destroy" sid="874281864614072" type="spr_enemyRangedAttack" />
             </actions>
         </event-block>
+        <event-block sid="682872933490463">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="247473034078643" type="spr_gokuBasicAttack">
+                    <param id="0" name="Object">spr_enemyRanged</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="988643265400539" type="Function">
+                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
+                    <param id="1" name="Parameter {n}">spr_gokuBasicAttack.damage</param>
+                </action>
+                <action id="-9" name="Destroy" sid="893037275771931" type="spr_gokuBasicAttack" />
+            </actions>
+        </event-block>
+        <event-block sid="878751042666292">
+            <conditions>
+                <condition id="0" name="On function" sid="171824562208922" type="Function">
+                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="440204704582623" type="spr_enemyRanged">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="185902815767958">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="994092648912310" type="spr_enemyRanged">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="641281752012694" type="spr_enemyRanged" />
+                        <action id="-9" name="Destroy" sid="987381007685278" type="spr_enemyRangedAttack" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="655048288714371">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="866833481967778" type="spr_gokuSpecialAttackBody">
+                    <param id="0" name="Object">spr_enemyRanged</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="949146660330568" type="spr_gokuSpecialAttackHead">
+                    <param id="0" name="Object">spr_enemyRanged</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="533749272091861" type="spr_gokuSpecialAttackTail">
+                    <param id="0" name="Object">spr_enemyRanged</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="502786132504027" type="Function">
+                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
+                    <param id="1" name="Parameter {n}">spr_player.specialAttackDamage</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -56,6 +56,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="canAttack" sid="500298270301480" type="boolean" />
+                <instance-variable name="specialAttackDamage" sid="144110612421129" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="820716886951766">
@@ -538,9 +539,6 @@
         </object-type>
         <object-type name="spr_gokuSpecialAttackHead" sid="478183700560544">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="damage" sid="185549866400123" type="number" />
-            </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="888348018902060">
                     <behavior id="Bullet" />
@@ -636,6 +634,9 @@
             <behaviors>
                 <behavior-type name="Bullet" sid="284234105935673">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="910630526818857">
+                    <behavior id="destroy" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
