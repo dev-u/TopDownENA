@@ -798,8 +798,7 @@
         <event-sheet>Goku - Scene 2 Events.xml</event-sheet>
         <event-sheet>Goku - Scene 3 Events.xml</event-sheet>
         <event-sheet>Goku Attacks Events.xml</event-sheet>
-        <event-sheet>Enemy Ranged Events.xml</event-sheet>
-        <event-sheet>Enemy Melee Events.xml</event-sheet>
+        <event-sheet>Commom Enemies Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />

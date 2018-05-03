@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Enemy Ranged Events</name>
+    <name>Commom Enemies Events</name>
     <events>
         <variable constant="0" name="enemyRangedDamage" sid="424687269971513" static="0" type="number">15</variable>
         <variable constant="0" name="enemyRangedHealth" sid="714081311780686" static="0" type="number">80</variable>
@@ -122,6 +122,78 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="149559642613377">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="882791191863910" type="System">
+                            <param id="0" name="Object">spr_enemyMelee</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="215426788719402" type="System">
+                            <param id="0" name="Value">abs(angle(spr_enemyMelee.X, spr_enemyMelee.Y, spr_player.X, spr_player.Y))</param>
+                            <param id="1" name="Lower bound">0</param>
+                            <param id="2" name="Upper bound">45</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="276782843643239" type="spr_enemyMelee">
+                            <param id="0" name="Animation">enemyMeleeCharacter &amp; &quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="108038204185334">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="453567800187530" type="System">
+                            <param id="0" name="Object">spr_enemyMelee</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="141451927501740" type="System">
+                            <param id="0" name="Value">angle(spr_enemyMelee.X, spr_enemyMelee.Y, spr_player.X, spr_player.Y)</param>
+                            <param id="1" name="Lower bound">45</param>
+                            <param id="2" name="Upper bound">135</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="508069806585217" type="spr_enemyMelee">
+                            <param id="0" name="Animation">enemyMeleeCharacter &amp; &quot;Down&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="724526521147447">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="394777069434426" type="System">
+                            <param id="0" name="Object">spr_enemyMelee</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="367745406535034" type="System">
+                            <param id="0" name="Value">abs(angle(spr_enemyMelee.X, spr_enemyMelee.Y, spr_player.X, spr_player.Y))</param>
+                            <param id="1" name="Lower bound">135</param>
+                            <param id="2" name="Upper bound">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="700967747400980" type="spr_enemyMelee">
+                            <param id="0" name="Animation">enemyMeleeCharacter &amp; &quot;Left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="514029997300841">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="690311888171034" type="System">
+                            <param id="0" name="Object">spr_enemyMelee</param>
+                        </condition>
+                        <condition id="-21" name="Is between values" sid="203321731573351" type="System">
+                            <param id="0" name="Value">angle(spr_enemyMelee.X, spr_enemyMelee.Y, spr_player.X, spr_player.Y)</param>
+                            <param id="1" name="Lower bound">-135</param>
+                            <param id="2" name="Upper bound">-45</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="942130812248861" type="spr_enemyMelee">
+                            <param id="0" name="Animation">enemyMeleeCharacter &amp; &quot;Up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="961732727105685">
@@ -201,6 +273,48 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <comment>Melee Enemy Events</comment>
+        <variable constant="0" name="enemyMeleeCharacter" sid="457731985124981" static="0" type="text">Saibamen</variable>
+        <variable constant="0" name="enemyMeleeDamage" sid="888736752896978" static="0" type="number">10</variable>
+        <variable constant="0" name="enemyMeleeHealth" sid="949432292040901" static="0" type="number">100</variable>
+        <event-block sid="352976404895898">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="844063530158075" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="736296541766892" type="spr_enemyMelee">
+                    <param id="0" name="Angle">angle(spr_enemyMelee.X, spr_enemyMelee.Y, spr_player.X, spr_player.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="260708101731575">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="683033819942284" type="spr_enemyMelee">
+                    <param id="0" name="Object">spr_player</param>
+                </condition>
+                <condition id="-35" inverted="1" name="Test regex" sid="470580456324203" type="System">
+                    <param id="0" name="String">spr_enemyMelee.AnimationName</param>
+                    <param id="1" name="Regex">&quot;Attack&quot;</param>
+                    <param id="2" name="Flags">&quot;gi&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="300564538443965" type="Function">
+                    <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
+                    <param id="1" name="Parameter {n}">enemyMeleeDamage</param>
+                </action>
+                <action id="4" name="Set animation" sid="258138170399708" type="spr_enemyMelee">
+                    <param id="0" name="Animation">spr_enemyMelee.AnimationName &amp; &quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="250353335198102" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="5" name="Set frame" sid="273793454621342" type="spr_enemyMelee">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

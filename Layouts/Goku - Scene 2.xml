@@ -39,15 +39,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
-                        <y>352</y>
+                        <x>512</x>
+                        <y>365</y>
                         <z>0</z>
-                        <width>1094.82824707</width>
-                        <height>1145.750488281</height>
+                        <width>1156.967041016</width>
+                        <height>1210.779541016</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
+                        <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -296,38 +296,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spr_enemyRanged" uid="22">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>CellDown</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <health>80</health>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>640</x>
-                        <y>352</y>
-                        <z>0</z>
-                        <width>43</width>
-                        <height>52</height>
-                        <depth>0</depth>
-                        <hotspotX>0.627906978</hotspotX>
-                        <hotspotY>0.403846145</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="txt_playerName" uid="31">
                     <properties>
                         <text>Text</text>
@@ -421,46 +389,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>384</x>
-                        <y>224</y>
+                        <x>320</x>
+                        <y>192</y>
                         <z>0</z>
                         <width>17</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0.529411793</hotspotX>
                         <hotspotY>0.433333337</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spr_enemyRanged" uid="36">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>CellDown</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <health>80</health>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>704</x>
-                        <y>224</y>
-                        <z>0</z>
-                        <width>43</width>
-                        <height>52</height>
-                        <depth>0</depth>
-                        <hotspotX>0.627906978</hotspotX>
-                        <hotspotY>0.403846145</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -485,14 +421,57 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>352</x>
-                        <y>192</y>
+                        <x>544</x>
+                        <y>160</y>
                         <z>0</z>
                         <width>43</width>
                         <height>52</height>
                         <depth>0</depth>
                         <hotspotX>0.627906978</hotspotX>
                         <hotspotY>0.403846145</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spr_enemyMelee" uid="22">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <health>100</health>
+                        <canAttack>true</canAttack>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>100</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>No</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>416</x>
+                        <y>192</y>
+                        <z>0</z>
+                        <width>17</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0.529411793</hotspotX>
+                        <hotspotY>0.433333337</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
