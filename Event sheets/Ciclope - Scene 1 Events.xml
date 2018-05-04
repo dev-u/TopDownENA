@@ -53,6 +53,10 @@
                     <param id="0" name="Variable">bossCharacter</param>
                     <param id="1" name="Value">&quot;Magneto&quot;</param>
                 </action>
+                <action id="4" name="Set animation" sid="537644719503376" type="spr_playerSpecialAttackIcon">
+                    <param id="0" name="Animation">playerCharacter&amp;&quot;Inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
     </events>
