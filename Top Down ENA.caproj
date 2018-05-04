@@ -813,9 +813,104 @@
         </object-type>
         <object-type name="spr_enemyFrieza" sid="542451855010504">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="410907258528946" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="122238836226428">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="384783500677529" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="FriezaUp" pingpong="0" repeatcount="1" repeatto="0" sid="384783500677529" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.419355" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.419355" />
+                </animation>
+                <animation framecount="4" loop="0" name="FriezaLeft" pingpong="0" repeatcount="1" repeatto="0" sid="879310582320453" speed="5">
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.419355" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.419355" />
+                </animation>
+                <animation framecount="4" loop="0" name="FriezaRight" pingpong="0" repeatcount="1" repeatto="0" sid="395131507413948" speed="5">
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.4">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.419355">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.4">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.419355">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="FriezaDown" pingpong="0" repeatcount="1" repeatto="0" sid="319688890242968" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.419355" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.4" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.419355" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_enemyFriezaHealth" sid="605885503307978">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Green" pingpong="0" repeatcount="1" repeatto="0" sid="538729581791466" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Yellow" pingpong="0" repeatcount="1" repeatto="0" sid="906767049130151" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Red" pingpong="0" repeatcount="1" repeatto="0" sid="452939572243679" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_enemyFriezaHealthBar" sid="408351023647379">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="482316424746049" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.545455" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_enemyFriezaAttack" sid="844452020031639">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="908722130598748">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="398377571081603">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="CellAttack" pingpong="0" repeatcount="1" repeatto="0" sid="838941204477543" speed="5">
+                    <frame duration="1" hotspotX="0.59375" hotspotY="0.34375" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -835,6 +930,7 @@
         <event-sheet>Goku - Scene 3 Events.xml</event-sheet>
         <event-sheet>Goku Attacks Events.xml</event-sheet>
         <event-sheet>Commom Enemies Events.xml</event-sheet>
+        <event-sheet>Frieza Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />

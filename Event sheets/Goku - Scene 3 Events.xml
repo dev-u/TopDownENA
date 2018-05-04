@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Goku - Scene 3 Events</name>
     <events>
+        <include>Frieza Events</include>
         <include>Goku Attacks Events</include>
         <include>Commom Enemies Events</include>
     </events>

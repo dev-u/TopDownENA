@@ -219,16 +219,6 @@
             </actions>
         </event-block>
         <comment>Functions</comment>
-        <event-block sid="643275711436819">
-            <conditions>
-                <condition id="0" name="On function" sid="989012113420488" type="Function">
-                    <param id="0" name="Name">&quot;Kill Player&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="943004413475718" type="spr_player" />
-            </actions>
-        </event-block>
         <event-block sid="112689087086037">
             <conditions>
                 <condition id="0" name="On function" sid="865666103086327" type="Function">
@@ -289,10 +279,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Call function" sid="125499364147146" type="Function">
-                            <param id="0" name="Name">&quot;Kill Player&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
+                        <action id="-9" name="Destroy" sid="943004413475718" type="spr_player" />
                     </actions>
                 </event-block>
             </sub-events>
