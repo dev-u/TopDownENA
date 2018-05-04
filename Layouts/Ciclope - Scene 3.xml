@@ -173,7 +173,7 @@
                 <instance type="spr_playerSpecialAttackIcon" uid="68">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>CiclopeInactive</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -195,7 +195,7 @@
                 <instance type="spr_enemyRanged" uid="83">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>CellDown</initial-animation>
+                        <initial-animation>JuggernautDown</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -215,11 +215,11 @@
                         <x>128</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>43</width>
-                        <height>52</height>
+                        <width>46</width>
+                        <height>62</height>
                         <depth>0</depth>
-                        <hotspotX>0.627906978</hotspotX>
-                        <hotspotY>0.403846145</hotspotY>
+                        <hotspotX>0.586956501</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -227,7 +227,7 @@
                 <instance type="spr_enemyRanged" uid="84">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>CellDown</initial-animation>
+                        <initial-animation>JuggernautDown</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -247,11 +247,11 @@
                         <x>128</x>
                         <y>320</y>
                         <z>0</z>
-                        <width>43</width>
-                        <height>52</height>
+                        <width>46</width>
+                        <height>62</height>
                         <depth>0</depth>
-                        <hotspotX>0.627906978</hotspotX>
-                        <hotspotY>0.403846145</hotspotY>
+                        <hotspotX>0.586956501</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -259,7 +259,7 @@
                 <instance type="spr_enemyMelee" uid="85">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>MercurioDown</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -287,14 +287,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>128</x>
-                        <y>448</y>
+                        <x>131.605407715</x>
+                        <y>441.189758301</y>
                         <z>0</z>
-                        <width>17</width>
-                        <height>30</height>
+                        <width>25.210834503</width>
+                        <height>40.617458344</height>
                         <depth>0</depth>
-                        <hotspotX>0.529411793</hotspotX>
-                        <hotspotY>0.433333337</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.413793117</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -302,7 +302,7 @@
                 <instance type="spr_enemyMelee" uid="100">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>MercurioDown</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -330,14 +330,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>288</x>
-                        <y>320</y>
+                        <x>291.605407715</x>
+                        <y>313.189758301</y>
                         <z>0</z>
-                        <width>17</width>
-                        <height>30</height>
+                        <width>25.210834503</width>
+                        <height>40.617458344</height>
                         <depth>0</depth>
-                        <hotspotX>0.529411793</hotspotX>
-                        <hotspotY>0.433333337</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.413793117</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -345,7 +345,7 @@
                 <instance type="spr_enemyMelee" uid="101">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
+                        <initial-animation>MercurioDown</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -373,14 +373,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>288</x>
-                        <y>576</y>
+                        <x>291.605407715</x>
+                        <y>569.189758301</y>
                         <z>0</z>
-                        <width>17</width>
-                        <height>30</height>
+                        <width>25.210834503</width>
+                        <height>40.617458344</height>
                         <depth>0</depth>
-                        <hotspotX>0.529411793</hotspotX>
-                        <hotspotY>0.433333337</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.413793117</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

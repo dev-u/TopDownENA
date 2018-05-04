@@ -560,6 +560,34 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="CiclopeActive" pingpong="0" repeatcount="1" repeatto="0" sid="228249499691887" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\hud\rosto_power_up.png">
+                        <collision-poly>
+                            <point x="0.031746" y="0.03125" />
+                            <point x="0.492063" y="0" />
+                            <point x="0.968254" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.968254" y="0.96875" />
+                            <point x="0.492063" y="1" />
+                            <point x="0.031746" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="CiclopeInactive" pingpong="0" repeatcount="1" repeatto="0" sid="400051328948600" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\hud\rosto_normal.png">
+                        <collision-poly>
+                            <point x="0.031746" y="0.03125" />
+                            <point x="0.492063" y="0" />
+                            <point x="0.968254" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.968254" y="0.96875" />
+                            <point x="0.492063" y="1" />
+                            <point x="0.031746" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="txt_playerName" sid="372210353514887">
@@ -598,7 +626,7 @@
         <object-type name="spr_powerUp" sid="554151933746612">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="168159034987295" speed="5">
+                <animation framecount="1" loop="0" name="GokuPU" pingpong="0" repeatcount="1" repeatto="0" sid="168159034987295" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Hud\powerup.png">
                         <collision-poly>
                             <point x="0.0526316" y="0.1" />
@@ -611,6 +639,9 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="CiclopePU" pingpong="0" repeatcount="1" repeatto="0" sid="697344913386372" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -940,29 +971,109 @@
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.37037" />
                 </animation>
-                <animation framecount="1" loop="0" name="MercurioUp" pingpong="0" repeatcount="1" repeatto="0" sid="412736889044891" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="MercurioUp" pingpong="0" repeatcount="1" repeatto="0" sid="412736889044891" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
                 </animation>
-                <animation framecount="1" loop="0" name="MercurioUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="720610538017975" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="MercurioUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="720610538017975" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
                 </animation>
-                <animation framecount="1" loop="0" name="MercurioLeft" pingpong="0" repeatcount="1" repeatto="0" sid="767653586556393" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="MercurioLeft" pingpong="0" repeatcount="1" repeatto="0" sid="767653586556393" speed="5">
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.433333" />
                 </animation>
-                <animation framecount="1" loop="0" name="MercurioLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="300364378617848" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="MercurioLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="300364378617848" speed="5">
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.433333" />
                 </animation>
-                <animation framecount="1" loop="0" name="MercurioRight" pingpong="0" repeatcount="1" repeatto="0" sid="592290755607740" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="MercurioRight" pingpong="0" repeatcount="1" repeatto="0" sid="592290755607740" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.413793">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.433333">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.413793">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.433333">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="MercurioRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="330578865929360" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="MercurioRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="330578865929360" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.413793">
+                        <collision-poly>
+                            <point x="1" y="0.965517" />
+                            <point x="0" y="0.965517" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.433333">
+                        <collision-poly>
+                            <point x="1" y="0.966667" />
+                            <point x="0" y="0.966667" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.413793">
+                        <collision-poly>
+                            <point x="1" y="0.965517" />
+                            <point x="0" y="0.965517" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.433333">
+                        <collision-poly>
+                            <point x="1" y="0.966667" />
+                            <point x="0" y="0.966667" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="MercurioDown" pingpong="0" repeatcount="1" repeatto="0" sid="620633048805043" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="MercurioDown" pingpong="0" repeatcount="1" repeatto="0" sid="620633048805043" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />
                 </animation>
-                <animation framecount="1" loop="0" name="MercurioDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="826553807929621" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="4" loop="0" name="MercurioDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="826553807929621" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />
                 </animation>
             </animation-folder>
         </object-type>
