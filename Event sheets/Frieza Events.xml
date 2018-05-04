@@ -257,10 +257,6 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="567991731875278" type="spr_enemyFrieza" />
                         <action id="-9" name="Destroy" sid="689784340910362" type="spr_enemyFriezaAttack" />
-                        <action id="-12" name="Subtract from" sid="796174179059338" type="spr_portal">
-                            <param id="0" name="Instance variable">enemiesLeft</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>

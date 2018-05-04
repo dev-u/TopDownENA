@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Goku Attacks Events</name>
     <events>
+        <include>Commom Enemies Events</include>
         <include>Player Events</include>
         <event-block sid="400163103437020">
             <conditions>
@@ -196,7 +197,7 @@
                     <param id="1" name="Value">&quot;GokuSpecial&quot;</param>
                 </action>
                 <action id="4" name="Set animation" sid="206244618632542" type="spr_player">
-                    <param id="0" name="Animation">replace(spr_player.AnimationName, &quot;Goku&quot;, &quot;GokuSpecial&quot;)</param>
+                    <param id="0" name="Animation">replace(spr_player.AnimationName, playerCharacter, playerCharacter &amp;&quot;Special&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-9" name="Destroy" sid="174865308160738" type="spr_powerUp" />

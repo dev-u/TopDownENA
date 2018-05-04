@@ -270,10 +270,6 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="641281752012694" type="spr_enemyRanged" />
                         <action id="-9" name="Destroy" sid="987381007685278" type="spr_enemyRangedAttack" />
-                        <action id="-12" name="Subtract from" sid="924247027202517" type="spr_portal">
-                            <param id="0" name="Instance variable">enemiesLeft</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -379,13 +375,22 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="425820752872374" type="spr_enemyMelee" />
-                        <action id="-12" name="Subtract from" sid="543495301122193" type="spr_portal">
-                            <param id="0" name="Instance variable">enemiesLeft</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block any="1" sid="187557162742274">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="536199316761888" type="spr_enemyFrieza" />
+                <condition id="-19" name="On destroyed" sid="128468222224709" type="spr_enemyMelee" />
+                <condition id="-19" name="On destroyed" sid="771076801315887" type="spr_enemyRanged" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="683883684898997" type="spr_portal">
+                    <param id="0" name="Instance variable">enemiesLeft</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

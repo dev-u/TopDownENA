@@ -5,6 +5,5 @@
     <events>
         <include>Frieza Events</include>
         <include>Goku Attacks Events</include>
-        <include>Commom Enemies Events</include>
     </events>
 </c2eventsheet>
