@@ -94,6 +94,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="750482315452444" type="System">
+                    <param id="0" name="Variable">powerUp</param>
+                    <param id="1" name="Value">&quot;Inactive&quot;</param>
+                </action>
                 <action id="4" name="Set animation" sid="268895202229457" type="spr_playerSpecialAttackIcon">
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;)  &amp; &quot;Inactive&quot;</param>
                     <param id="1" name="From">1</param>

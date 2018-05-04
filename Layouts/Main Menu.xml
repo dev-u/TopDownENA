@@ -4,7 +4,7 @@
     <sid>622350759195737</sid>
     <event-sheet>Main Menu Events</event-sheet>
     <size>
-        <width>1080</width>
+        <width>1280</width>
         <height>720</height>
     </size>
     <margins>
@@ -29,6 +29,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="spr_background" uid="118">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>MainMenu</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>96</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>1072.620605469</width>
+                        <height>715.080444336</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="txtbox_playerName" uid="2">
                     <properties>
                         <text></text>
@@ -45,8 +67,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>430</x>
-                        <y>250</y>
+                        <x>557</x>
+                        <y>264</y>
                         <z>0</z>
                         <width>182</width>
                         <height>36</height>
@@ -69,8 +91,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>393</x>
-                        <y>398</y>
+                        <x>520</x>
+                        <y>412</y>
                         <z>0</z>
                         <width>109</width>
                         <height>32</height>
@@ -93,8 +115,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>548</x>
-                        <y>399</y>
+                        <x>675</x>
+                        <y>413</y>
                         <z>0</z>
                         <width>109</width>
                         <height>32</height>

@@ -861,6 +861,9 @@
                 <animation framecount="1" loop="0" name="CiclopeScene1" pingpong="0" repeatcount="1" repeatto="0" sid="879858477346813" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\school.png" />
                 </animation>
+                <animation framecount="1" loop="0" name="MainMenu" pingpong="0" repeatcount="1" repeatto="0" sid="347234200666786" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDown\MainMenu.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="spr_enemyMelee" sid="383262279028525">
@@ -1171,6 +1174,58 @@
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.4" />
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.419355" />
                 </animation>
+                <animation framecount="4" loop="0" name="MagnetoUp" pingpong="0" repeatcount="1" repeatto="0" sid="369235832459671" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="MagnetoLeft" pingpong="0" repeatcount="1" repeatto="0" sid="637104728208256" speed="5">
+                    <frame duration="1" hotspotX="0.461538" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.461538" hotspotY="0.484848" />
+                    <frame duration="1" hotspotX="0.461538" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.461538" hotspotY="0.484848" />
+                </animation>
+                <animation framecount="4" loop="0" name="MagnetoRight" pingpong="0" repeatcount="1" repeatto="0" sid="420699994605694" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.484848">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.484848">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="MagnetoDown" pingpong="0" repeatcount="1" repeatto="0" sid="598083853579857" speed="5">
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.484848" />
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.484848" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="spr_enemyFriezaHealth" sid="605885503307978">
@@ -1206,8 +1261,22 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="CellAttack" pingpong="0" repeatcount="1" repeatto="0" sid="838941204477543" speed="5">
+                <animation framecount="1" loop="0" name="FriezaAttack" pingpong="0" repeatcount="1" repeatto="0" sid="838941204477543" speed="5">
                     <frame duration="1" hotspotX="0.59375" hotspotY="0.34375" />
+                </animation>
+                <animation framecount="1" loop="0" name="MagnetoAttack" pingpong="0" repeatcount="1" repeatto="0" sid="204920884050172" speed="5">
+                    <frame duration="1" hotspotX="0.525" hotspotY="0.333333" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\Personagens\Magneto\cano.png">
+                        <collision-poly>
+                            <point x="0.05" y="0.333333" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.333333" />
+                            <point x="0.95" y="0.666667" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.333333" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

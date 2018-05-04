@@ -45,6 +45,14 @@
                     <param id="0" name="Animation">&quot;CiclopeUp&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="-9" name="Set value" sid="105777890370892" type="System">
+                    <param id="0" name="Variable">bossEnemies</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="493027912688445" type="System">
+                    <param id="0" name="Variable">bossCharacter</param>
+                    <param id="1" name="Value">&quot;Magneto&quot;</param>
+                </action>
             </actions>
         </event-block>
     </events>
