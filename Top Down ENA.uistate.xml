@@ -12,13 +12,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Goku - Scene 3</layout>
         <layout order="6">Goku - Scene 2</layout>
+        <layout order="8">Main Menu</layout>
+        <layout order="9">Ciclope - Scene 1</layout>
+        <layout order="11">Ciclope - Scene 2</layout>
+        <layout order="12">Ciclope - Scene 3</layout>
+        <layout order="13">Goku - Scene 1</layout>
         <event-sheet order="1">Frieza Events</event-sheet>
         <event-sheet order="2">Player Events</event-sheet>
         <event-sheet order="3">Goku - Scene 3 Events</event-sheet>
         <event-sheet order="4">Goku - Scene 2 Events</event-sheet>
         <event-sheet order="5">Goku Attacks Events</event-sheet>
-        <event-sheet order="7">Goku - Scene 1 Events</event-sheet>
-        <event-sheet active="1" order="8">Commom Enemies Events</event-sheet>
+        <event-sheet active="1" order="7">Commom Enemies Events</event-sheet>
+        <event-sheet order="10">Ciclope - Scene 1 Events</event-sheet>
+        <event-sheet order="14">Ciclope - Scene 2 Events</event-sheet>
+        <event-sheet order="15">Ciclope - Scene 3 Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

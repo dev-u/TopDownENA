@@ -30,7 +30,7 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1080</width>
+        <width>1280</width>
         <height>720</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
@@ -405,6 +405,82 @@
                         <image-point name="Special Attack spawn" x="0.555556" y="1.21622" />
                     </frame>
                 </animation>
+                <animation framecount="4" loop="1" name="CiclopeUp" pingpong="0" repeatcount="1" repeatto="0" sid="584362557989773" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
+                </animation>
+                <animation framecount="4" loop="0" name="CiclopeUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="431956855054449" speed="5">
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.451613" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="1" name="CiclopeLeft" pingpong="0" repeatcount="1" repeatto="0" sid="295906571838052" speed="5">
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
+                </animation>
+                <animation framecount="4" loop="0" name="CiclopeLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="863561352121680" speed="5">
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.4375" hotspotY="0.451613" />
+                </animation>
+                <animation framecount="4" loop="1" name="CiclopeRight" pingpong="0" repeatcount="1" repeatto="0" sid="316854239533942" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.392857">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.413793">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.392857">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.413793">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="CiclopeRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="331292226435449" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.451613" />
+                </animation>
+                <animation framecount="4" loop="1" name="CiclopeDown" pingpong="0" repeatcount="1" repeatto="0" sid="998883937312451" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />
+                </animation>
+                <animation framecount="4" loop="0" name="CiclopeDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="374166478555798" speed="5">
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="Keyboard" sid="821029808364310">
@@ -647,6 +723,66 @@
                 <animation framecount="1" loop="0" name="CellDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="439758883925787" speed="5">
                     <frame duration="1" hotspotX="0.605263" hotspotY="0.403846" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Imperfect Cell\Cell_Atacando\cell ataque baixo.png" />
                 </animation>
+                <animation framecount="1" loop="0" name="JuggernautUp" pingpong="0" repeatcount="1" repeatto="0" sid="668875681321612" speed="5">
+                    <frame duration="1" hotspotX="0.590909" hotspotY="0.491803" />
+                </animation>
+                <animation framecount="3" loop="0" name="JuggernautUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="361558842528002" speed="5">
+                    <frame duration="1" hotspotX="0.590909" hotspotY="0.491803" />
+                    <frame duration="1" hotspotX="0.590909" hotspotY="0.446429" />
+                    <frame duration="1" hotspotX="0.583333" hotspotY="0.425926" />
+                </animation>
+                <animation framecount="1" loop="0" name="JuggernautLeft" pingpong="0" repeatcount="1" repeatto="0" sid="123694768420201" speed="5">
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.491803" />
+                </animation>
+                <animation framecount="3" loop="0" name="JuggernautLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="654169703885451" speed="5">
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.491803" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.45614" />
+                    <frame duration="1" hotspotX="0.566667" hotspotY="0.403846" />
+                </animation>
+                <animation framecount="1" loop="0" name="JuggernautRight" pingpong="0" repeatcount="1" repeatto="0" sid="242367514399845" speed="5">
+                    <frame duration="1" hotspotX="0.4" hotspotY="0.491803">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="JuggernautRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="189466221437188" speed="5">
+                    <frame duration="1" hotspotX="0.4" hotspotY="0.491803">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.482759" hotspotY="0.45614">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.433333" hotspotY="0.403846">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="JuggernautDown" pingpong="0" repeatcount="1" repeatto="0" sid="292843526559734" speed="5">
+                    <frame duration="1" hotspotX="0.586957" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="0" name="JuggernautDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="523307576153039" speed="5">
+                    <frame duration="1" hotspotX="0.586957" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.577778" hotspotY="0.45614" />
+                    <frame duration="1" hotspotX="0.583333" hotspotY="0.425926" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="spr_enemyRangedAttack" sid="468564116337178">
@@ -663,19 +799,36 @@
                 <animation framecount="1" loop="0" name="CellAttack" pingpong="0" repeatcount="1" repeatto="0" sid="311046434284350" speed="5">
                     <frame duration="1" hotspotX="0.59375" hotspotY="0.34375" />
                 </animation>
+                <animation framecount="1" loop="0" name="JuggernautAttack" pingpong="0" repeatcount="1" repeatto="0" sid="609607810268650" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\Personagens\Juggernaut\pedra.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.25" />
+                            <point x="0.461538" y="0" />
+                            <point x="0.846154" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.923077" y="0.875" />
+                            <point x="0.461538" y="1" />
+                            <point x="0.0769231" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="spr_background" sid="133220609901960">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="GokuScene1" pingpong="0" repeatcount="1" repeatto="0" sid="725329819927322" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Background\bg1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 1\Background\bg1.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="GokuScene2" pingpong="0" repeatcount="1" repeatto="0" sid="602387959238552" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.500736" original-source="C:\Users\lucas\Desktop\bg2.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="GokuScene3" pingpong="0" repeatcount="1" repeatto="0" sid="889117784413588" speed="5">
                     <frame duration="1" hotspotX="0.501279" hotspotY="0.502242" original-source="C:\Users\lucas\Desktop\bg3.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="CiclopeScene1" pingpong="0" repeatcount="1" repeatto="0" sid="879858477346813" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\school.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -787,6 +940,30 @@
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.37037" />
                 </animation>
+                <animation framecount="1" loop="0" name="MercurioUp" pingpong="0" repeatcount="1" repeatto="0" sid="412736889044891" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="MercurioUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="720610538017975" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="MercurioLeft" pingpong="0" repeatcount="1" repeatto="0" sid="767653586556393" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="MercurioLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="300364378617848" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="MercurioRight" pingpong="0" repeatcount="1" repeatto="0" sid="592290755607740" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="MercurioRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="330578865929360" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="MercurioDown" pingpong="0" repeatcount="1" repeatto="0" sid="620633048805043" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="MercurioDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="826553807929621" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="spr_portal" sid="374031539397683">
@@ -808,6 +985,15 @@
                             <point x="0.0434783" y="0.461538" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="7" loop="1" name="Xmen" pingpong="0" repeatcount="1" repeatto="0" sid="558908686086707" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\PORTAL FRAMES\xmen simbolo.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\PORTAL FRAMES\xmen simbolo1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\PORTAL FRAMES\xmen simbolo2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\PORTAL FRAMES\xmen simbolo3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\PORTAL FRAMES\xmen simbolo4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\PORTAL FRAMES\xmen simbolo5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\BG\PORTAL FRAMES\xmen simbolo6.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -921,6 +1107,9 @@
         <layout>Goku - Scene 1.xml</layout>
         <layout>Goku - Scene 2.xml</layout>
         <layout>Goku - Scene 3.xml</layout>
+        <layout>Ciclope - Scene 1.xml</layout>
+        <layout>Ciclope - Scene 2.xml</layout>
+        <layout>Ciclope - Scene 3.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Goku - Scene 1 Events.xml</event-sheet>
@@ -931,6 +1120,9 @@
         <event-sheet>Goku Attacks Events.xml</event-sheet>
         <event-sheet>Commom Enemies Events.xml</event-sheet>
         <event-sheet>Frieza Events.xml</event-sheet>
+        <event-sheet>Ciclope - Scene 1 Events.xml</event-sheet>
+        <event-sheet>Ciclope - Scene 2 Events.xml</event-sheet>
+        <event-sheet>Ciclope - Scene 3 Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />

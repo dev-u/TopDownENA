@@ -4,7 +4,7 @@
     <sid>202822614438346</sid>
     <event-sheet>Goku - Scene 1 Events</event-sheet>
     <size>
-        <width>1080</width>
+        <width>1280</width>
         <height>720</height>
     </size>
     <margins>
@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
+                        <x>640</x>
                         <y>416</y>
                         <z>0</z>
-                        <width>1156.967041016</width>
-                        <height>1210.779541016</height>
+                        <width>1293.528442383</width>
+                        <height>1353.692626953</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -97,7 +97,7 @@
                 </instance>
                 <instance type="txt_playerAttackUses" uid="8">
                     <properties>
-                        <text>Ki: 100</text>
+                        <text>Ataques: 100</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-21,400,0</font>
                         <color>0,0,0</color>
@@ -113,7 +113,7 @@
                         <x>64</x>
                         <y>0</y>
                         <z>0</z>
-                        <width>96</width>
+                        <width>128</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -510,7 +510,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
+                        <x>640</x>
                         <y>96</y>
                         <z>0</z>
                         <width>85.127960205</width>

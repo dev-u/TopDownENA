@@ -4,7 +4,7 @@
     <sid>967959719320431</sid>
     <event-sheet>Goku - Scene 2 Events</event-sheet>
     <size>
-        <width>1080</width>
+        <width>1280</width>
         <height>720</height>
     </size>
     <margins>
@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>527.97644043</x>
-                        <y>368</y>
+                        <x>630.426269531</x>
+                        <y>368.000030518</y>
                         <z>0</z>
-                        <width>768</width>
-                        <height>1120</height>
+                        <width>908.709838867</width>
+                        <height>1325.201904297</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.500736356</hotspotY>
@@ -202,8 +202,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
-                        <y>640</y>
+                        <x>576</x>
+                        <y>672</y>
                         <z>0</z>
                         <width>22.627416611</width>
                         <height>45.254833221</height>
@@ -575,7 +575,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1024</x>
+                        <x>1216</x>
                         <y>352</y>
                         <z>0</z>
                         <width>85.127960205</width>

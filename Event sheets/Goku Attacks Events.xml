@@ -51,7 +51,7 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Set text" sid="130833121555274" type="txt_playerAttackUses">
-                    <param id="0" name="Text">&quot;Ki: &quot; &amp; playerAttackUses</param>
+                    <param id="0" name="Text">&quot;Ataques: &quot; &amp; playerAttackUses</param>
                 </action>
                 <action id="4" name="Set animation" sid="856303180399844" type="spr_player">
                     <param id="0" name="Animation">replace(spr_player.AnimationName, &quot;Attack&quot;, &quot;&quot;)</param>
