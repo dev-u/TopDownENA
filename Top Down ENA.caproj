@@ -668,8 +668,14 @@
         <object-type name="spr_background" sid="133220609901960">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725329819927322" speed="5">
+                <animation framecount="1" loop="0" name="GokuScene1" pingpong="0" repeatcount="1" repeatto="0" sid="725329819927322" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Background\bg1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="GokuScene2" pingpong="0" repeatcount="1" repeatto="0" sid="602387959238552" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500736" original-source="C:\Users\lucas\Desktop\bg2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="GokuScene3" pingpong="0" repeatcount="1" repeatto="0" sid="889117784413588" speed="5">
+                    <frame duration="1" hotspotX="0.501279" hotspotY="0.502242" original-source="C:\Users\lucas\Desktop\bg3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -780,6 +786,36 @@
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.37037" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_portal" sid="374031539397683">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="enemiesLeft" sid="351337902732291" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Nuvem" pingpong="0" repeatcount="1" repeatto="0" sid="748106164513460" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.538462" original-source="C:\Users\lucas\Desktop\teleport.png">
+                        <collision-poly>
+                            <point x="0.130435" y="0.230769" />
+                            <point x="0.478261" y="0.153846" />
+                            <point x="0.826087" y="0.307692" />
+                            <point x="0.956522" y="0.461538" />
+                            <point x="0.826087" y="0.692308" />
+                            <point x="0.478261" y="0.923077" />
+                            <point x="0.130435" y="0.769231" />
+                            <point x="0.0434783" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_enemyFrieza" sid="542451855010504">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="384783500677529" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

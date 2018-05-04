@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Goku - Scene 1 Events</name>
     <events>
+        <include>Commom Enemies Events</include>
         <include>Goku Attacks Events</include>
         <event-block sid="816058301718567">
             <conditions>
@@ -28,6 +29,18 @@
                 <action id="-9" name="Set value" sid="500655581409029" type="System">
                     <param id="0" name="Variable">PLAYER_MAX_HEALTH</param>
                     <param id="1" name="Value">150</param>
+                </action>
+                <action id="-9" name="Set value" sid="325950036465672" type="System">
+                    <param id="0" name="Variable">enemyMeleeHealth</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="-9" name="Set value" sid="713571682919772" type="System">
+                    <param id="0" name="Variable">enemyMeleeDamage</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Set value" sid="799271356606785" type="System">
+                    <param id="0" name="Variable">enemyMeleeCharacter</param>
+                    <param id="1" name="Value">&quot;Saibamen&quot;</param>
                 </action>
             </actions>
         </event-block>

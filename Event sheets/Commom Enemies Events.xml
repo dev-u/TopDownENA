@@ -270,6 +270,10 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="641281752012694" type="spr_enemyRanged" />
                         <action id="-9" name="Destroy" sid="987381007685278" type="spr_enemyRangedAttack" />
+                        <action id="-12" name="Subtract from" sid="924247027202517" type="spr_portal">
+                            <param id="0" name="Instance variable">enemiesLeft</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -315,6 +319,73 @@
                     <param id="0" name="Frame number">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block any="1" sid="480438711019368">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="457561008179521" type="spr_gokuSpecialAttackBody">
+                    <param id="0" name="Object">spr_enemyMelee</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="760909636339925" type="spr_gokuSpecialAttackHead">
+                    <param id="0" name="Object">spr_enemyMelee</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="709656320552414" type="spr_gokuSpecialAttackTail">
+                    <param id="0" name="Object">spr_enemyMelee</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="265696740712128" type="Function">
+                    <param id="0" name="Name">&quot;Damage Melee Enemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="492278444099434" type="spr_enemyMelee">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">spr_player.specialAttackDamage</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="809367748658155">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="849151676186680" type="spr_gokuBasicAttack">
+                    <param id="0" name="Object">spr_enemyMelee</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="328259221596994" type="Function">
+                    <param id="0" name="Name">&quot;Damage Melee Enemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Subtract from" sid="167718715129024" type="spr_enemyMelee">
+                    <param id="0" name="Instance variable">health</param>
+                    <param id="1" name="Value">spr_gokuBasicAttack.damage</param>
+                </action>
+                <action id="-9" name="Destroy" sid="638370228008654" type="spr_gokuBasicAttack" />
+            </actions>
+        </event-block>
+        <event-block sid="824902509722051">
+            <conditions>
+                <condition id="0" name="On function" sid="125463556667666" type="Function">
+                    <param id="0" name="Name">&quot;Damage Melee Enemy&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="684011671833139">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="390866212912613" type="spr_enemyMelee">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="425820752872374" type="spr_enemyMelee" />
+                        <action id="-12" name="Subtract from" sid="543495301122193" type="spr_portal">
+                            <param id="0" name="Instance variable">enemiesLeft</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
