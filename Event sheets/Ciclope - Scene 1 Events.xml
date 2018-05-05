@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Ciclope - Scene 1 Events</name>
+    <events>
+        <include>Goku Attacks Events</include>
+        <event-block sid="606919060944949">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="412683932958386" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="801145635905732" type="System">
+                    <param id="0" name="Variable">playerCharacter</param>
+                    <param id="1" name="Value">&quot;Ciclope&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="455386901129322" type="System">
+                    <param id="0" name="Variable">enemyRangedHealth</param>
+                    <param id="1" name="Value">80</param>
+                </action>
+                <action id="-9" name="Set value" sid="876645412311954" type="System">
+                    <param id="0" name="Variable">enemyRangedCharacter</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+                <action id="-9" name="Set value" sid="509526514900046" type="System">
+                    <param id="0" name="Variable">enemyRangedCharacter</param>
+                    <param id="1" name="Value">&quot;Juggernaut&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="938530915545339" type="System">
+                    <param id="0" name="Variable">PLAYER_MAX_HEALTH</param>
+                    <param id="1" name="Value">150</param>
+                </action>
+                <action id="-9" name="Set value" sid="698051738284978" type="System">
+                    <param id="0" name="Variable">enemyMeleeHealth</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="-9" name="Set value" sid="777970977186259" type="System">
+                    <param id="0" name="Variable">enemyMeleeDamage</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Set value" sid="653308269927707" type="System">
+                    <param id="0" name="Variable">enemyMeleeCharacter</param>
+                    <param id="1" name="Value">&quot;Mercurio&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="305734795564776" type="spr_player">
+                    <param id="0" name="Animation">&quot;CiclopeUp&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="105777890370892" type="System">
+                    <param id="0" name="Variable">bossEnemies</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="493027912688445" type="System">
+                    <param id="0" name="Variable">bossCharacter</param>
+                    <param id="1" name="Value">&quot;Magneto&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="537644719503376" type="spr_playerSpecialAttackIcon">
+                    <param id="0" name="Animation">playerCharacter&amp;&quot;Inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
