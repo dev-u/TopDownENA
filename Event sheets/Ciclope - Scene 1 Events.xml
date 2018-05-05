@@ -61,6 +61,10 @@
                     <param id="0" name="Animation">playerCharacter&amp;&quot;Inactive&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="-9" name="Set value" sid="546873544476477" type="System">
+                    <param id="0" name="Variable">playerAttackUses</param>
+                    <param id="1" name="Value">120</param>
+                </action>
             </actions>
         </event-block>
     </events>

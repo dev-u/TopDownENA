@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player Events</name>
     <events>
-        <variable constant="0" name="powerUp" sid="842223171559259" static="0" type="text">&quot;Inactive&quot;</variable>
+        <variable constant="0" name="powerUp" sid="842223171559259" static="0" type="text">Inactive</variable>
         <variable constant="0" name="playerDirection" sid="344796134814201" static="0" type="number">270</variable>
         <variable constant="0" name="playerCharacter" sid="867123669580584" static="0" type="text">Goku</variable>
         <variable constant="0" name="playerTime" sid="997741563401588" static="0" type="number">0</variable>
@@ -61,6 +61,9 @@
                 </action>
                 <action id="0" name="Set text" sid="245006879871302" type="txt_playerName">
                     <param id="0" name="Text">playerName</param>
+                </action>
+                <action id="0" name="Set text" sid="898865456338433" type="txt_playerAttackUses">
+                    <param id="0" name="Text">&quot;Ataques: &quot; &amp; playerAttackUses</param>
                 </action>
                 <action id="-3" name="Set position" sid="777274144044477" type="spr_powerUp">
                     <param id="0" name="X">random(32, LayoutWidth - 32)</param>

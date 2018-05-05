@@ -49,6 +49,10 @@
                     <param id="0" name="Variable">bossCharacter</param>
                     <param id="1" name="Value">&quot;Frieza&quot;</param>
                 </action>
+                <action id="-9" name="Set value" sid="511954996763735" type="System">
+                    <param id="0" name="Variable">playerAttackUses</param>
+                    <param id="1" name="Value">120</param>
+                </action>
             </actions>
         </event-block>
     </events>
