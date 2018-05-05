@@ -39,6 +39,10 @@
                 <action id="-8" name="Set angle" sid="142895183868629" type="spr_gokuBasicAttack">
                     <param id="0" name="Angle">playerDirection</param>
                 </action>
+                <action id="4" name="Set animation" sid="660006624681702" type="spr_gokuBasicAttack">
+                    <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
                 <action id="-11" name="Subtract from" sid="507191351575822" type="System">
                     <param id="0" name="Variable">playerAttackUses</param>
                     <param id="1" name="Value">1</param>
@@ -147,6 +151,18 @@
                 </action>
                 <action id="-8" name="Set angle" sid="682174716859210" type="spr_gokuSpecialAttackHead">
                     <param id="0" name="Angle">playerDirection</param>
+                </action>
+                <action id="4" name="Set animation" sid="313502344261986" type="spr_gokuSpecialAttackTail">
+                    <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="851250471949539" type="spr_gokuSpecialAttackBody">
+                    <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="542378402955087" type="spr_gokuSpecialAttackHead">
+                    <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>

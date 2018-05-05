@@ -607,7 +607,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134593658181546" speed="5">
+                <animation framecount="1" loop="0" name="GokuAttack" pingpong="0" repeatcount="1" repeatto="0" sid="134593658181546" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Goku\Misc\ataque.png">
                         <collision-poly>
                             <point x="0.111336" y="0.152488" />
@@ -618,6 +618,20 @@
                             <point x="0.5" y="0.934389" />
                             <point x="0.111336" y="0.847512" />
                             <point x="0.0656109" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="CiclopeAttack" pingpong="0" repeatcount="1" repeatto="0" sid="490083863158645" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\Personagens\Ciplope\Misc\ataque.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.125" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -653,7 +667,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425560714267161" speed="5">
+                <animation framecount="1" loop="0" name="GokuAttack" pingpong="0" repeatcount="1" repeatto="0" sid="425560714267161" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Goku\Misc\kamehameha_fim.png">
                         <collision-poly>
                             <point x="0.0666667" y="0.0714286" />
@@ -667,12 +681,25 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="CiclopeAttack" pingpong="0" repeatcount="1" repeatto="0" sid="916070479798263" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\Personagens\Ciplope\Misc\lazer fim.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.466667" y="0" />
+                            <point x="0.866667" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.866667" y="0.857143" />
+                            <point x="0.466667" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="spr_gokuSpecialAttackBody" sid="544669778166001">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774842753127531" speed="5">
+                <animation framecount="1" loop="0" name="GokuAttack" pingpong="0" repeatcount="1" repeatto="0" sid="774842753127531" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Goku\Misc\kamehameha_meio.png">
                         <collision-poly>
                             <point x="0.285714" y="0.285714" />
@@ -684,12 +711,15 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="1" loop="0" name="CiclopeAttack" pingpong="0" repeatcount="1" repeatto="0" sid="230937664717034" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\Personagens\Ciplope\Misc\lazer meio.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="spr_gokuSpecialAttackTail" sid="460338879446897">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923309300185805" speed="5">
+                <animation framecount="1" loop="0" name="GokuAttack" pingpong="0" repeatcount="1" repeatto="0" sid="923309300185805" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\Cena 1\Personagens\Goku\Misc\kamehameha_inicio.png">
                         <collision-poly>
                             <point x="0.333333" y="0.214286" />
@@ -699,6 +729,19 @@
                             <point x="0.777778" y="0.857143" />
                             <point x="0.444444" y="0.857143" />
                             <point x="0.333333" y="0.785714" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="CiclopeAttack" pingpong="0" repeatcount="1" repeatto="0" sid="766398973310266" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 2\Personagens\Ciplope\Misc\lazer inicio.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.214286" />
+                            <point x="0.466667" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.466667" y="1" />
+                            <point x="0.2" y="0.785714" />
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
