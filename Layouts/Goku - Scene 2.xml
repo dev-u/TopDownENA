@@ -4,7 +4,7 @@
     <sid>967959719320431</sid>
     <event-sheet>Goku - Scene 2 Events</event-sheet>
     <size>
-        <width>1280</width>
+        <width>1080</width>
         <height>720</height>
     </size>
     <margins>
@@ -39,15 +39,112 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>630.426269531</x>
-                        <y>368.000030518</y>
+                        <x>527.97644043</x>
+                        <y>368</y>
                         <z>0</z>
-                        <width>908.709838867</width>
-                        <height>1325.201904297</height>
+                        <width>768</width>
+                        <height>1120</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.500736356</hotspotY>
                         <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txt_playerAttackUses" uid="13">
+                    <properties>
+                        <text>Ki: 100</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-21,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pgb_playerSpecialAttackProgress" uid="14">
+                    <properties>
+                        <value>0</value>
+                        <maximum>100</maximum>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>480</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="txt_playerTime" uid="15">
+                    <properties>
+                        <text>Tempo: 0</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-21,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>896</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>160</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="spr_playerSpecialAttackIcon" uid="16">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>GokuInactive</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>416</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -105,8 +202,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>576</x>
-                        <y>672</y>
+                        <x>544</x>
+                        <y>640</y>
                         <z>0</z>
                         <width>22.627416611</width>
                         <height>45.254833221</height>
@@ -161,7 +258,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spr_playerBasicAttack" uid="27">
+                <instance type="spr_gokuBasicAttack" uid="27">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -478,7 +575,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1216</x>
+                        <x>1024</x>
                         <y>352</y>
                         <z>0</z>
                         <width>85.127960205</width>
@@ -486,103 +583,6 @@
                         <depth>0</depth>
                         <hotspotX>0.521739125</hotspotX>
                         <hotspotY>0.538461566</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="txt_playerAttackUses" uid="109">
-                    <properties>
-                        <text>Ataques: 100</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-21,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>64</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <width>156</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="pgb_playerSpecialAttackProgress" uid="110">
-                    <properties>
-                        <value>0</value>
-                        <maximum>100</maximum>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <id-optional></id-optional>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>576</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <width>200</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="txt_playerTime" uid="111">
-                    <properties>
-                        <text>Tempo: 0</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-21,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1088</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <width>160</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="spr_playerSpecialAttackIcon" uid="112">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>GokuInactive</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>512</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

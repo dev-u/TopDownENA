@@ -10,7 +10,7 @@
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="140250277916897" type="System">
-                    <param id="0" name="Variable">playerCharacter</param>
+                    <param id="0" name="Variable">playerName</param>
                     <param id="1" name="Value">&quot;Goku&quot;</param>
                 </action>
                 <action id="-9" name="Set value" sid="344697217577758" type="System">
@@ -40,14 +40,6 @@
                 <action id="-9" name="Set value" sid="799271356606785" type="System">
                     <param id="0" name="Variable">enemyMeleeCharacter</param>
                     <param id="1" name="Value">&quot;Saibamen&quot;</param>
-                </action>
-                <action id="-9" name="Set value" sid="267687732768218" type="System">
-                    <param id="0" name="Variable">bossEnemies</param>
-                    <param id="1" name="Value">3</param>
-                </action>
-                <action id="-9" name="Set value" sid="657068995997624" type="System">
-                    <param id="0" name="Variable">bossCharacter</param>
-                    <param id="1" name="Value">&quot;Frieza&quot;</param>
                 </action>
             </actions>
         </event-block>

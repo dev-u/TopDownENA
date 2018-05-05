@@ -3,12 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Frieza Events</name>
     <events>
-        <variable constant="0" name="bossEnemies" sid="894666375298732" static="0" type="number">0</variable>
-        <variable constant="0" name="bossCharacter" sid="947388814444273" static="0" type="text"></variable>
         <event-block sid="882811635420079">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="588835413389927" type="System">
-                    <param id="0" name="Interval (seconds)">1.6 - bossEnemies/10</param>
+                    <param id="0" name="Interval (seconds)">1.5</param>
                 </condition>
             </conditions>
             <actions>
@@ -21,8 +19,15 @@
                     <param id="0" name="X">spr_player.X</param>
                     <param id="1" name="Y">spr_player.Y</param>
                 </action>
-                <action id="4" name="Set animation" sid="775740993502007" type="spr_enemyFriezaAttack">
-                    <param id="0" name="Animation">bossCharacter &amp; &quot;Attack&quot;</param>
+                <action id="4" name="Set animation" sid="481714220192302" type="spr_enemyRanged">
+                    <param id="0" name="Animation">spr_enemyRanged.AnimationName &amp; &quot;Attack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="793562038768713" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="4" name="Set animation" sid="711503416931027" type="spr_enemyRanged">
+                    <param id="0" name="Animation">replace(spr_enemyRanged.AnimationName, &quot;Attack&quot;, &quot;&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -37,7 +42,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="317975058743661" type="spr_enemyFrieza">
-                            <param id="0" name="Animation">bossCharacter&amp;&quot;Right&quot;</param>
+                            <param id="0" name="Animation">&quot;FriezaRight&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -52,7 +57,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="560378265968581" type="spr_enemyFrieza">
-                            <param id="0" name="Animation">bossCharacter&amp;&quot;Down&quot;</param>
+                            <param id="0" name="Animation">&quot;FriezaDown&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -67,7 +72,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="654710052928293" type="spr_enemyFrieza">
-                            <param id="0" name="Animation">bossCharacter&amp;&quot;Left&quot;</param>
+                            <param id="0" name="Animation">&quot;FriezaLeft&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -82,7 +87,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="824593958995594" type="spr_enemyFrieza">
-                            <param id="0" name="Animation">bossCharacter&amp;&quot;Up&quot;</param>
+                            <param id="0" name="Animation">&quot;FriezaUp&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -112,7 +117,7 @@
                 <condition id="-7" name="Compare instance variable" sid="578060057902378" type="spr_portal">
                     <param id="0" name="Instance variable">enemiesLeft</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">bossEnemies</param>
+                    <param id="2" name="Value">3</param>
                 </condition>
                 <condition id="-4" name="Trigger once while true" sid="334540851961664" type="System" />
             </conditions>
@@ -159,13 +164,13 @@
         </event-block>
         <event-block any="1" sid="973225982353616">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="211696913945807" type="spr_playerSpecialAttackBody">
+                <condition id="0" name="On collision with another object" sid="211696913945807" type="spr_gokuSpecialAttackBody">
                     <param id="0" name="Object">spr_enemyFrieza</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="783367346717755" type="spr_playerSpecialAttackHead">
+                <condition id="0" name="On collision with another object" sid="783367346717755" type="spr_gokuSpecialAttackHead">
                     <param id="0" name="Object">spr_enemyFrieza</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="669505260481892" type="spr_playerSpecialAttackTail">
+                <condition id="0" name="On collision with another object" sid="669505260481892" type="spr_gokuSpecialAttackTail">
                     <param id="0" name="Object">spr_enemyFrieza</param>
                 </condition>
             </conditions>
@@ -178,16 +183,16 @@
         </event-block>
         <event-block sid="124849017955899">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="679581553196173" type="spr_playerBasicAttack">
+                <condition id="0" name="On collision with another object" sid="679581553196173" type="spr_gokuBasicAttack">
                     <param id="0" name="Object">spr_enemyFrieza</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Call function" sid="140145698701046" type="Function">
                     <param id="0" name="Name">&quot;DamageFrieza&quot;</param>
-                    <param id="1" name="Parameter {n}">spr_playerBasicAttack.damage</param>
+                    <param id="1" name="Parameter {n}">spr_gokuBasicAttack.damage</param>
                 </action>
-                <action id="-9" name="Destroy" sid="913379771013675" type="spr_playerBasicAttack" />
+                <action id="-9" name="Destroy" sid="913379771013675" type="spr_gokuBasicAttack" />
             </actions>
         </event-block>
         <event-block sid="118375702722702">

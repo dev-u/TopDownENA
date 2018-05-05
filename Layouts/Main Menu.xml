@@ -4,7 +4,7 @@
     <sid>622350759195737</sid>
     <event-sheet>Main Menu Events</event-sheet>
     <size>
-        <width>1280</width>
+        <width>1080</width>
         <height>720</height>
     </size>
     <margins>
@@ -29,28 +29,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="spr_background" uid="118">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>MainMenu</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>96</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <width>1072.620605469</width>
-                        <height>715.080444336</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="txtbox_playerName" uid="2">
                     <properties>
                         <text></text>
@@ -67,8 +45,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>557</x>
-                        <y>264</y>
+                        <x>430</x>
+                        <y>250</y>
                         <z>0</z>
                         <width>182</width>
                         <height>36</height>
@@ -91,8 +69,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>520</x>
-                        <y>412</y>
+                        <x>393</x>
+                        <y>398</y>
                         <z>0</z>
                         <width>109</width>
                         <height>32</height>
@@ -115,8 +93,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>675</x>
-                        <y>413</y>
+                        <x>548</x>
+                        <y>399</y>
                         <z>0</z>
                         <width>109</width>
                         <height>32</height>
@@ -125,7 +103,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="spr_playerSpecialAttackHead" uid="28">
+                <instance type="spr_gokuSpecialAttackHead" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -159,7 +137,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spr_playerSpecialAttackBody" uid="29">
+                <instance type="spr_gokuSpecialAttackBody" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -181,7 +159,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spr_playerSpecialAttackTail" uid="30">
+                <instance type="spr_gokuSpecialAttackTail" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
