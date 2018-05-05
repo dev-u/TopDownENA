@@ -406,31 +406,45 @@
                     </frame>
                 </animation>
                 <animation framecount="4" loop="1" name="CiclopeUp" pingpong="0" repeatcount="1" repeatto="0" sid="584362557989773" speed="5">
-                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.413793">
+                        <image-point name="special_attack" x="0.529412" y="-0.241379" />
+                        <image-point name="special_attack2" x="0.529412" y="-0.344828" />
+                    </frame>
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.529412" hotspotY="0.433333" />
                 </animation>
                 <animation framecount="4" loop="0" name="CiclopeUpAttack" pingpong="0" repeatcount="1" repeatto="0" sid="431956855054449" speed="5">
-                    <frame duration="1" hotspotX="0.5625" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.5625" hotspotY="0.413793">
+                        <image-point name="special_attack" x="0.5" y="-0.241379" />
+                        <image-point name="special_attack2" x="0.5" y="-0.344828" />
+                    </frame>
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.433333" />
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.451613" />
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.5" />
                 </animation>
                 <animation framecount="4" loop="1" name="CiclopeLeft" pingpong="0" repeatcount="1" repeatto="0" sid="295906571838052" speed="5">
-                    <frame duration="1" hotspotX="0.466667" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.392857">
+                        <image-point name="special_attack" x="-0.533333" y="0.25" />
+                        <image-point name="special_attack2" x="-0.733333" y="0.25" />
+                    </frame>
                     <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.466667" hotspotY="0.392857" />
                     <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
                 </animation>
                 <animation framecount="4" loop="0" name="CiclopeLeftAttack" pingpong="0" repeatcount="1" repeatto="0" sid="863561352121680" speed="5">
-                    <frame duration="1" hotspotX="0.466667" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.466667" hotspotY="0.392857">
+                        <image-point name="special_attack" x="-0.533333" y="0.25" />
+                        <image-point name="special_attack2" x="-0.733333" y="0.25" />
+                    </frame>
                     <frame duration="1" hotspotX="0.466667" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.466667" hotspotY="0.392857" />
                     <frame duration="1" hotspotX="0.4375" hotspotY="0.451613" />
                 </animation>
                 <animation framecount="4" loop="1" name="CiclopeRight" pingpong="0" repeatcount="1" repeatto="0" sid="316854239533942" speed="5">
-                    <frame duration="1" hotspotX="0.533333" hotspotY="0.392857">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.428571">
+                        <image-point name="special_attack" x="1.53333" y="0.25" />
+                        <image-point name="special_attack2" x="1.73333" y="0.25" />
                         <collision-poly>
                             <point x="1" y="1" />
                             <point x="0" y="1" />
@@ -464,19 +478,28 @@
                     </frame>
                 </animation>
                 <animation framecount="4" loop="0" name="CiclopeRightAttack" pingpong="0" repeatcount="1" repeatto="0" sid="331292226435449" speed="5">
-                    <frame duration="1" hotspotX="0.533333" hotspotY="0.392857" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.392857">
+                        <image-point name="special_attack" x="1.53333" y="0.25" />
+                        <image-point name="special_attack2" x="1.73333" y="0.25" />
+                    </frame>
                     <frame duration="1" hotspotX="0.533333" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.533333" hotspotY="0.392857" />
                     <frame duration="1" hotspotX="0.5625" hotspotY="0.451613" />
                 </animation>
                 <animation framecount="4" loop="1" name="CiclopeDown" pingpong="0" repeatcount="1" repeatto="0" sid="998883937312451" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.413793">
+                        <image-point name="special_attack" x="0.5" y="1.31034" />
+                        <image-point name="special_attack2" x="0.5" y="1.41379" />
+                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.433333" />
                     <frame duration="1" hotspotX="0.470588" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />
                 </animation>
                 <animation framecount="4" loop="0" name="CiclopeDownAttack" pingpong="0" repeatcount="1" repeatto="0" sid="374166478555798" speed="5">
-                    <frame duration="1" hotspotX="0.470588" hotspotY="0.413793" />
+                    <frame duration="1" hotspotX="0.470588" hotspotY="0.413793">
+                        <image-point name="special_attack" x="0.470588" y="1.31034" />
+                        <image-point name="special_attack2" x="0.470588" y="1.41379" />
+                    </frame>
                     <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />
                     <frame duration="1" hotspotX="0.470588" hotspotY="0.413793" />
                     <frame duration="1" hotspotX="0.470588" hotspotY="0.433333" />

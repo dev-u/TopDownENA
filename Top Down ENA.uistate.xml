@@ -23,6 +23,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="6">Ciclope - Scene 3 Events</event-sheet>
         <event-sheet order="10">Ciclope - Scene 1 Events</event-sheet>
         <event-sheet order="12">Goku - Scene 1 Events</event-sheet>
+        <event-sheet order="13">Main Menu Events</event-sheet>
+        <event-sheet order="14">Commom Enemies Events</event-sheet>
+        <event-sheet order="15">Ciclope - Scene 2 Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
