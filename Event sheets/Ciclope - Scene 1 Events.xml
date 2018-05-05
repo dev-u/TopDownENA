@@ -27,7 +27,11 @@
                 </action>
                 <action id="-9" name="Set value" sid="938530915545339" type="System">
                     <param id="0" name="Variable">PLAYER_MAX_HEALTH</param>
-                    <param id="1" name="Value">150</param>
+                    <param id="1" name="Value">120</param>
+                </action>
+                <action id="-9" name="Set value" sid="573450975267747" type="System">
+                    <param id="0" name="Variable">playerHealth</param>
+                    <param id="1" name="Value">PLAYER_MAX_HEALTH</param>
                 </action>
                 <action id="-9" name="Set value" sid="698051738284978" type="System">
                     <param id="0" name="Variable">enemyMeleeHealth</param>
