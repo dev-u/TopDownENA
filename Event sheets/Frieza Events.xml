@@ -67,7 +67,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="654710052928293" type="spr_enemyFrieza">
-                            <param id="0" name="Animation">bossCharacter&amp;&quot;FriezaLeft&quot;</param>
+                            <param id="0" name="Animation">bossCharacter&amp;&quot;Left&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
@@ -82,7 +82,7 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="824593958995594" type="spr_enemyFrieza">
-                            <param id="0" name="Animation">bossCharacter&amp;&quot;FriezaUp&quot;</param>
+                            <param id="0" name="Animation">bossCharacter&amp;&quot;Up&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                     </actions>
