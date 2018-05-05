@@ -51,7 +51,7 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="0" name="Set text" sid="130833121555274" type="txt_playerAttackUses">
-                    <param id="0" name="Text">&quot;Ki: &quot; &amp; playerAttackUses</param>
+                    <param id="0" name="Text">&quot;Ataques: &quot; &amp; playerAttackUses</param>
                 </action>
                 <action id="4" name="Set animation" sid="856303180399844" type="spr_player">
                     <param id="0" name="Animation">replace(spr_player.AnimationName, &quot;Attack&quot;, &quot;&quot;)</param>
@@ -94,6 +94,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="750482315452444" type="System">
+                    <param id="0" name="Variable">powerUp</param>
+                    <param id="1" name="Value">&quot;Inactive&quot;</param>
+                </action>
                 <action id="4" name="Set animation" sid="268895202229457" type="spr_playerSpecialAttackIcon">
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;)  &amp; &quot;Inactive&quot;</param>
                     <param id="1" name="From">1</param>
@@ -104,7 +108,7 @@
                 </action>
                 <action id="-9" name="Set value" sid="707858968585406" type="System">
                     <param id="0" name="Variable">playerCharacter</param>
-                    <param id="1" name="Value">&quot;Goku&quot;</param>
+                    <param id="1" name="Value">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;)</param>
                 </action>
                 <action id="3" name="Set progress" sid="376333540758079" type="pgb_playerSpecialAttackProgress">
                     <param id="0" name="Value">0</param>
@@ -183,24 +187,6 @@
                     <param id="0" name="Animation">replace(replace(spr_player.AnimationName, &quot;GokuSpecial&quot;, &quot;Goku&quot;), &quot;Attack&quot;, &quot;&quot;)</param>
                     <param id="1" name="From">1</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="969557079509893">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="575458788911834" type="spr_player">
-                    <param id="0" name="Object">spr_powerUp</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="710386932522037" type="System">
-                    <param id="0" name="Variable">playerCharacter</param>
-                    <param id="1" name="Value">&quot;GokuSpecial&quot;</param>
-                </action>
-                <action id="4" name="Set animation" sid="206244618632542" type="spr_player">
-                    <param id="0" name="Animation">replace(spr_player.AnimationName, playerCharacter, playerCharacter &amp;&quot;Special&quot;)</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="-9" name="Destroy" sid="174865308160738" type="spr_powerUp" />
             </actions>
         </event-block>
     </events>

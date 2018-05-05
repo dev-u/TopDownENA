@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player Events</name>
     <events>
+        <variable constant="0" name="powerUp" sid="842223171559259" static="0" type="text">&quot;Inactive&quot;</variable>
         <variable constant="0" name="playerDirection" sid="344796134814201" static="0" type="number">270</variable>
         <variable constant="0" name="playerCharacter" sid="867123669580584" static="0" type="text">Goku</variable>
         <variable constant="0" name="playerTime" sid="997741563401588" static="0" type="number">0</variable>
@@ -50,6 +51,14 @@
                 <condition id="-2" name="On start of layout" sid="976294841967057" type="System" />
             </conditions>
             <actions>
+                <action id="4" name="Set animation" sid="449133427947989" type="spr_playerSpecialAttackIcon">
+                    <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; powerUp</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="619411275742591" type="spr_player">
+                    <param id="0" name="Animation">playerCharacter &amp; &quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
                 <action id="0" name="Set text" sid="245006879871302" type="txt_playerName">
                     <param id="0" name="Text">playerName</param>
                 </action>
@@ -298,6 +307,19 @@
                 </action>
                 <action id="3" name="Set progress" sid="375750756559881" type="pgb_playerSpecialAttackProgress">
                     <param id="0" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="782656007476190" type="spr_player">
+                    <param id="0" name="Animation">replace(spr_player.AnimationName, playerCharacter, replace(playerCharacter, &quot;Goku&quot;, &quot;GokuSpecial&quot;))</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="240931586780543" type="System">
+                    <param id="0" name="Variable">playerCharacter</param>
+                    <param id="1" name="Value">replace(playerCharacter, &quot;Goku&quot;, &quot;GokuSpecial&quot;)</param>
+                </action>
+                <action id="-9" name="Destroy" sid="514705461794621" type="spr_powerUp" />
+                <action id="-9" name="Set value" sid="702679351201783" type="System">
+                    <param id="0" name="Variable">powerUp</param>
+                    <param id="1" name="Value">&quot;Active&quot;</param>
                 </action>
             </actions>
         </event-block>
