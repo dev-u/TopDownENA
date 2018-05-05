@@ -489,7 +489,7 @@
         <object-type name="txt_playerName" sid="372210353514887">
             <plugin id="Text" />
         </object-type>
-        <object-type name="spr_gokuBasicAttack" sid="438778572667121">
+        <object-type name="spr_playerBasicAttack" sid="438778572667121">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="damage" sid="226899971009105" type="number" />
@@ -538,7 +538,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="spr_gokuSpecialAttackHead" sid="478183700560544">
+        <object-type name="spr_playerSpecialAttackHead" sid="478183700560544">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Bullet" sid="888348018902060">
@@ -562,7 +562,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="spr_gokuSpecialAttackBody" sid="544669778166001">
+        <object-type name="spr_playerSpecialAttackBody" sid="544669778166001">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774842753127531" speed="5">
@@ -579,7 +579,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="spr_gokuSpecialAttackTail" sid="460338879446897">
+        <object-type name="spr_playerSpecialAttackTail" sid="460338879446897">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923309300185805" speed="5">

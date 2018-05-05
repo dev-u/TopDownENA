@@ -39,11 +39,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/spr_playerHealth/" />
         <folder expanded="1" path="animation-folder/spr_playerHealthBar/" />
         <folder expanded="1" path="animation-folder/spr_playerSpecialAttackIcon/" />
-        <folder expanded="1" path="animation-folder/spr_gokuBasicAttack/" />
+        <folder expanded="1" path="animation-folder/spr_playerBasicAttack/" />
         <folder expanded="1" path="animation-folder/spr_powerUp/" />
-        <folder expanded="1" path="animation-folder/spr_gokuSpecialAttackHead/" />
-        <folder expanded="1" path="animation-folder/spr_gokuSpecialAttackBody/" />
-        <folder expanded="1" path="animation-folder/spr_gokuSpecialAttackTail/" />
+        <folder expanded="1" path="animation-folder/spr_playerSpecialAttackHead/" />
+        <folder expanded="1" path="animation-folder/spr_playerSpecialAttackBody/" />
+        <folder expanded="1" path="animation-folder/spr_playerSpecialAttackTail/" />
         <folder expanded="1" path="animation-folder/spr_enemyRanged/" />
         <folder expanded="1" path="animation-folder/spr_enemyRangedAttack/" />
         <folder expanded="1" path="animation-folder/spr_background/" />

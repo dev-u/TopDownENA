@@ -192,7 +192,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spr_gokuBasicAttack" uid="41">
+                <instance type="spr_playerBasicAttack" uid="41">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

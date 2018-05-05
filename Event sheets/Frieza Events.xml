@@ -164,13 +164,13 @@
         </event-block>
         <event-block any="1" sid="973225982353616">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="211696913945807" type="spr_gokuSpecialAttackBody">
+                <condition id="0" name="On collision with another object" sid="211696913945807" type="spr_playerSpecialAttackBody">
                     <param id="0" name="Object">spr_enemyFrieza</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="783367346717755" type="spr_gokuSpecialAttackHead">
+                <condition id="0" name="On collision with another object" sid="783367346717755" type="spr_playerSpecialAttackHead">
                     <param id="0" name="Object">spr_enemyFrieza</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="669505260481892" type="spr_gokuSpecialAttackTail">
+                <condition id="0" name="On collision with another object" sid="669505260481892" type="spr_playerSpecialAttackTail">
                     <param id="0" name="Object">spr_enemyFrieza</param>
                 </condition>
             </conditions>
@@ -183,16 +183,16 @@
         </event-block>
         <event-block sid="124849017955899">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="679581553196173" type="spr_gokuBasicAttack">
+                <condition id="0" name="On collision with another object" sid="679581553196173" type="spr_playerBasicAttack">
                     <param id="0" name="Object">spr_enemyFrieza</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Call function" sid="140145698701046" type="Function">
                     <param id="0" name="Name">&quot;DamageFrieza&quot;</param>
-                    <param id="1" name="Parameter {n}">spr_gokuBasicAttack.damage</param>
+                    <param id="1" name="Parameter {n}">spr_playerBasicAttack.damage</param>
                 </action>
-                <action id="-9" name="Destroy" sid="913379771013675" type="spr_gokuBasicAttack" />
+                <action id="-9" name="Destroy" sid="913379771013675" type="spr_playerBasicAttack" />
             </actions>
         </event-block>
         <event-block sid="118375702722702">

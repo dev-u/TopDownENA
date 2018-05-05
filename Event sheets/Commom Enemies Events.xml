@@ -212,7 +212,7 @@
         </event-block>
         <event-block sid="682872933490463">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="247473034078643" type="spr_gokuBasicAttack">
+                <condition id="0" name="On collision with another object" sid="247473034078643" type="spr_playerBasicAttack">
                     <param id="0" name="Object">spr_enemyRanged</param>
                 </condition>
             </conditions>
@@ -223,20 +223,20 @@
                 </action>
                 <action id="-12" name="Subtract from" sid="440204704582623" type="spr_enemyRanged">
                     <param id="0" name="Instance variable">health</param>
-                    <param id="1" name="Value">spr_gokuBasicAttack.damage</param>
+                    <param id="1" name="Value">spr_playerBasicAttack.damage</param>
                 </action>
-                <action id="-9" name="Destroy" sid="893037275771931" type="spr_gokuBasicAttack" />
+                <action id="-9" name="Destroy" sid="893037275771931" type="spr_playerBasicAttack" />
             </actions>
         </event-block>
         <event-block any="1" sid="655048288714371">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="866833481967778" type="spr_gokuSpecialAttackBody">
+                <condition id="0" name="On collision with another object" sid="866833481967778" type="spr_playerSpecialAttackBody">
                     <param id="0" name="Object">spr_enemyRanged</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="949146660330568" type="spr_gokuSpecialAttackHead">
+                <condition id="0" name="On collision with another object" sid="949146660330568" type="spr_playerSpecialAttackHead">
                     <param id="0" name="Object">spr_enemyRanged</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="533749272091861" type="spr_gokuSpecialAttackTail">
+                <condition id="0" name="On collision with another object" sid="533749272091861" type="spr_playerSpecialAttackTail">
                     <param id="0" name="Object">spr_enemyRanged</param>
                 </condition>
             </conditions>
@@ -318,13 +318,13 @@
         </event-block>
         <event-block any="1" sid="480438711019368">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="457561008179521" type="spr_gokuSpecialAttackBody">
+                <condition id="0" name="On collision with another object" sid="457561008179521" type="spr_playerSpecialAttackBody">
                     <param id="0" name="Object">spr_enemyMelee</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="760909636339925" type="spr_gokuSpecialAttackHead">
+                <condition id="0" name="On collision with another object" sid="760909636339925" type="spr_playerSpecialAttackHead">
                     <param id="0" name="Object">spr_enemyMelee</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="709656320552414" type="spr_gokuSpecialAttackTail">
+                <condition id="0" name="On collision with another object" sid="709656320552414" type="spr_playerSpecialAttackTail">
                     <param id="0" name="Object">spr_enemyMelee</param>
                 </condition>
             </conditions>
@@ -341,7 +341,7 @@
         </event-block>
         <event-block sid="809367748658155">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="849151676186680" type="spr_gokuBasicAttack">
+                <condition id="0" name="On collision with another object" sid="849151676186680" type="spr_playerBasicAttack">
                     <param id="0" name="Object">spr_enemyMelee</param>
                 </condition>
             </conditions>
@@ -352,9 +352,9 @@
                 </action>
                 <action id="-12" name="Subtract from" sid="167718715129024" type="spr_enemyMelee">
                     <param id="0" name="Instance variable">health</param>
-                    <param id="1" name="Value">spr_gokuBasicAttack.damage</param>
+                    <param id="1" name="Value">spr_playerBasicAttack.damage</param>
                 </action>
-                <action id="-9" name="Destroy" sid="638370228008654" type="spr_gokuBasicAttack" />
+                <action id="-9" name="Destroy" sid="638370228008654" type="spr_playerBasicAttack" />
             </actions>
         </event-block>
         <event-block sid="824902509722051">

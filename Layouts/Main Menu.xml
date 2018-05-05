@@ -103,7 +103,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="spr_gokuSpecialAttackHead" uid="28">
+                <instance type="spr_playerSpecialAttackHead" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -137,7 +137,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spr_gokuSpecialAttackBody" uid="29">
+                <instance type="spr_playerSpecialAttackBody" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -159,7 +159,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="spr_gokuSpecialAttackTail" uid="30">
+                <instance type="spr_playerSpecialAttackTail" uid="30">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

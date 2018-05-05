@@ -32,11 +32,11 @@
                     <param id="0" name="Seconds">spr_player.AnimationFrameCount / spr_player.AnimationSpeed - 0.3</param>
                 </action>
                 <action id="0" name="Spawn another object" sid="268654962942864" type="spr_player">
-                    <param id="0" name="Object">spr_gokuBasicAttack</param>
+                    <param id="0" name="Object">spr_playerBasicAttack</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">1</param>
                 </action>
-                <action id="-8" name="Set angle" sid="142895183868629" type="spr_gokuBasicAttack">
+                <action id="-8" name="Set angle" sid="142895183868629" type="spr_playerBasicAttack">
                     <param id="0" name="Angle">playerDirection</param>
                 </action>
                 <action id="-11" name="Subtract from" sid="507191351575822" type="System">
@@ -121,27 +121,27 @@
                     <param id="0" name="Seconds">spr_player.AnimationFrameCount / spr_player.AnimationSpeed - 0.3</param>
                 </action>
                 <action id="0" name="Spawn another object" sid="519358154860231" type="spr_player">
-                    <param id="0" name="Object">spr_gokuSpecialAttackTail</param>
+                    <param id="0" name="Object">spr_playerSpecialAttackTail</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">1</param>
                 </action>
                 <action id="0" name="Spawn another object" sid="927520485026940" type="spr_player">
-                    <param id="0" name="Object">spr_gokuSpecialAttackBody</param>
+                    <param id="0" name="Object">spr_playerSpecialAttackBody</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">2</param>
                 </action>
                 <action id="0" name="Spawn another object" sid="626912137379560" type="spr_player">
-                    <param id="0" name="Object">spr_gokuSpecialAttackHead</param>
+                    <param id="0" name="Object">spr_playerSpecialAttackHead</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">1</param>
                 </action>
-                <action id="-8" name="Set angle" sid="189818323358678" type="spr_gokuSpecialAttackTail">
+                <action id="-8" name="Set angle" sid="189818323358678" type="spr_playerSpecialAttackTail">
                     <param id="0" name="Angle">playerDirection</param>
                 </action>
-                <action id="-8" name="Set angle" sid="248528666553333" type="spr_gokuSpecialAttackBody">
+                <action id="-8" name="Set angle" sid="248528666553333" type="spr_playerSpecialAttackBody">
                     <param id="0" name="Angle">playerDirection</param>
                 </action>
-                <action id="-8" name="Set angle" sid="682174716859210" type="spr_gokuSpecialAttackHead">
+                <action id="-8" name="Set angle" sid="682174716859210" type="spr_playerSpecialAttackHead">
                     <param id="0" name="Angle">playerDirection</param>
                 </action>
             </actions>
@@ -153,14 +153,14 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-5" name="Set width" sid="187847553573448" type="spr_gokuSpecialAttackBody">
-                    <param id="0" name="Width">distance(spr_gokuSpecialAttackHead.X, spr_gokuSpecialAttackHead.Y, spr_gokuSpecialAttackTail.X, spr_gokuSpecialAttackTail.Y)</param>
+                <action id="-5" name="Set width" sid="187847553573448" type="spr_playerSpecialAttackBody">
+                    <param id="0" name="Width">distance(spr_playerSpecialAttackHead.X, spr_playerSpecialAttackHead.Y, spr_playerSpecialAttackTail.X, spr_playerSpecialAttackTail.Y)</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="875106726534339">
             <conditions>
-                <condition id="-18" name="On created" sid="289159074983699" type="spr_gokuSpecialAttackHead" />
+                <condition id="-18" name="On created" sid="289159074983699" type="spr_playerSpecialAttackHead" />
             </conditions>
             <actions>
                 <action behavior="8Direction" id="8" name="Set enabled" sid="447907854746782" type="spr_player">
@@ -169,9 +169,9 @@
                 <action id="-16" name="Wait" sid="687569663119259" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
-                <action id="-9" name="Destroy" sid="510464531647064" type="spr_gokuSpecialAttackHead" />
-                <action id="-9" name="Destroy" sid="817408010626043" type="spr_gokuSpecialAttackBody" />
-                <action id="-9" name="Destroy" sid="453754175439832" type="spr_gokuSpecialAttackTail" />
+                <action id="-9" name="Destroy" sid="510464531647064" type="spr_playerSpecialAttackHead" />
+                <action id="-9" name="Destroy" sid="817408010626043" type="spr_playerSpecialAttackBody" />
+                <action id="-9" name="Destroy" sid="453754175439832" type="spr_playerSpecialAttackTail" />
                 <action behavior="8Direction" id="8" name="Set enabled" sid="565419038391759" type="spr_player">
                     <param id="0" name="State">1</param>
                 </action>
