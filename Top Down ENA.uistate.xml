@@ -10,15 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Goku - Scene 3</layout>
-        <layout order="6">Goku - Scene 2</layout>
-        <event-sheet order="1">Frieza Events</event-sheet>
-        <event-sheet order="2">Player Events</event-sheet>
-        <event-sheet order="3">Goku - Scene 3 Events</event-sheet>
-        <event-sheet order="4">Goku - Scene 2 Events</event-sheet>
-        <event-sheet order="5">Goku Attacks Events</event-sheet>
-        <event-sheet order="7">Goku - Scene 1 Events</event-sheet>
-        <event-sheet active="1" order="8">Commom Enemies Events</event-sheet>
+        <layout order="1">Goku - Scene 3</layout>
+        <layout order="7">Goku - Scene 2</layout>
+        <layout order="10">Main Menu</layout>
+        <event-sheet order="2">Frieza Events</event-sheet>
+        <event-sheet order="3">Player Events</event-sheet>
+        <event-sheet order="4">Goku - Scene 3 Events</event-sheet>
+        <event-sheet order="5">Goku - Scene 2 Events</event-sheet>
+        <event-sheet active="1" order="6">Goku Attacks Events</event-sheet>
+        <event-sheet order="8">Goku - Scene 1 Events</event-sheet>
+        <event-sheet order="9">Commom Enemies Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

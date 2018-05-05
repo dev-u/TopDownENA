@@ -10,6 +10,7 @@
     <unique-id>174wkrc88kqbj</unique-id>
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -48,7 +49,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Edge</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -914,6 +915,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="390945511410390">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -935,8 +939,29 @@
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
         <global-instance type="Function" uid="7" />
+        <global-instance type="Audio" uid="63">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="charging.m4a" />
+        <file name="charging.ogg" />
+        <file name="fireball.m4a" />
+        <file name="fireball.ogg" />
+        <file name="kamehameha.m4a" />
+        <file name="kamehameha.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
