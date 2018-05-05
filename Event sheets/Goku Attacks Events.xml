@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Goku Attacks Events</name>
     <events>
-        <include>Commom Enemies Events</include>
+        <include>Common Enemies Events</include>
         <include>Player Events</include>
         <event-block sid="400163103437020">
             <conditions>
@@ -86,6 +86,25 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="425278230327685">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="179641053956732" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="989630644300981" type="Audio">
+                            <param id="0" name="Audio file">charging</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;charging&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="511657649285895" type="Audio">
+                            <param id="0" name="Audio file">kamehameha</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;kamehameha&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="373262193938217">
@@ -163,6 +182,9 @@
                 <action id="4" name="Set animation" sid="542378402955087" type="spr_gokuSpecialAttackHead">
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Attack&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="6" name="Stop" sid="627505142919406" type="Audio">
+                    <param id="0" name="Tag">&quot;charging&quot;</param>
                 </action>
             </actions>
         </event-block>

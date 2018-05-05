@@ -10,6 +10,7 @@
     <unique-id>174wkrc88kqbj</unique-id>
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -1428,6 +1429,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="929656494966866">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1446,7 +1450,7 @@
         <event-sheet>Goku - Scene 2 Events.xml</event-sheet>
         <event-sheet>Goku - Scene 3 Events.xml</event-sheet>
         <event-sheet>Goku Attacks Events.xml</event-sheet>
-        <event-sheet>Commom Enemies Events.xml</event-sheet>
+        <event-sheet>Common Enemies Events.xml</event-sheet>
         <event-sheet>Frieza Events.xml</event-sheet>
         <event-sheet>Ciclope - Scene 1 Events.xml</event-sheet>
         <event-sheet>Ciclope - Scene 2 Events.xml</event-sheet>
@@ -1455,8 +1459,31 @@
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
         <global-instance type="Function" uid="7" />
+        <global-instance type="Audio" uid="153">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="charging.m4a" />
+        <file name="charging.ogg" />
+        <file name="fireball.m4a" />
+        <file name="fireball.ogg" />
+        <file name="kamehameha.m4a" />
+        <file name="kamehameha.ogg" />
+        <file name="som fase vencida.m4a" />
+        <file name="som fase vencida.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
