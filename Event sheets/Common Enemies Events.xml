@@ -221,13 +221,13 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Call function" sid="988643265400539" type="Function">
-                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
                 <action id="-12" name="Subtract from" sid="440204704582623" type="spr_enemyRanged">
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">spr_gokuBasicAttack.damage</param>
+                </action>
+                <action id="0" name="Call function" sid="988643265400539" type="Function">
+                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
                 <action id="-9" name="Destroy" sid="893037275771931" type="spr_gokuBasicAttack" />
             </actions>
@@ -245,13 +245,13 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Call function" sid="502786132504027" type="Function">
-                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
                 <action id="-12" name="Subtract from" sid="352431947359216" type="spr_enemyRanged">
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">spr_player.specialAttackDamage</param>
+                </action>
+                <action id="0" name="Call function" sid="502786132504027" type="Function">
+                    <param id="0" name="Name">&quot;Damage Ranged Enemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
@@ -294,13 +294,13 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Call function" sid="300564538443965" type="Function">
-                    <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
-                    <param id="1" name="Parameter {n}">enemyMeleeDamage</param>
-                </action>
                 <action id="4" name="Set animation" sid="258138170399708" type="spr_enemyMelee">
                     <param id="0" name="Animation">spr_enemyMelee.AnimationName &amp; &quot;Attack&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="300564538443965" type="Function">
+                    <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
+                    <param id="1" name="Parameter {n}">enemyMeleeDamage</param>
                 </action>
                 <action id="-16" name="Wait" sid="250353335198102" type="System">
                     <param id="0" name="Seconds">0.5</param>
@@ -323,13 +323,13 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Call function" sid="265696740712128" type="Function">
-                    <param id="0" name="Name">&quot;Damage Melee Enemy&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
                 <action id="-12" name="Subtract from" sid="492278444099434" type="spr_enemyMelee">
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">spr_player.specialAttackDamage</param>
+                </action>
+                <action id="0" name="Call function" sid="265696740712128" type="Function">
+                    <param id="0" name="Name">&quot;Damage Melee Enemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
