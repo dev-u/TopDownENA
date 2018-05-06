@@ -292,6 +292,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="943004413475718" type="spr_player" />
+                        <action id="6" name="Stop" sid="887865203009341" type="Audio">
+                            <param id="0" name="Tag">&quot;kamehameha&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="747466045956590" type="Audio">
+                            <param id="0" name="Tag">&quot;charging&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -335,6 +341,12 @@
             <actions>
                 <action id="-43" name="Go to next/previous layout" sid="343296987756676" type="System">
                     <param id="0" name="Which">0</param>
+                </action>
+                <action id="0" name="Play" sid="377793856112030" type="Audio">
+                    <param id="0" name="Audio file">portal goku</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;portal&quot;</param>
                 </action>
             </actions>
         </event-block>
