@@ -33,6 +33,10 @@
                     <param id="2" name="X">LayoutWidth/2 + 256</param>
                     <param id="3" name="Y">256</param>
                 </action>
+                <action id="4" name="Set animation" sid="820324571531158" type="spr_enemyMelee">
+                    <param id="0" name="Animation">enemyMeleeCharacter &amp; &quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
             </actions>
         </event-block>
     </events>

@@ -93,15 +93,9 @@
                     <actions>
                         <action id="0" name="Play" sid="989630644300981" type="Audio">
                             <param id="0" name="Audio file">charging</param>
-                            <param id="2" name="Loop">0</param>
+                            <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">-5</param>
                             <param id="1" name="Tag (optional)">&quot;charging&quot;</param>
-                        </action>
-                        <action id="0" name="Play" sid="511657649285895" type="Audio">
-                            <param id="0" name="Audio file">kamehameha</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;kamehameha&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -117,6 +111,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="511657649285895" type="Audio">
+                    <param id="0" name="Audio file">kamehameha</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;kamehameha&quot;</param>
+                </action>
                 <action id="-9" name="Set value" sid="750482315452444" type="System">
                     <param id="0" name="Variable">powerUp</param>
                     <param id="1" name="Value">&quot;Inactive&quot;</param>
@@ -143,6 +143,9 @@
                 <action id="-13" name="Set boolean" sid="481707805634360" type="spr_player">
                     <param id="0" name="Instance variable">canAttack</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="700511261094896" type="System">
+                    <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="-16" name="Wait" sid="156379323432396" type="System">
                     <param id="0" name="Seconds">spr_player.AnimationFrameCount / spr_player.AnimationSpeed - 0.3</param>
