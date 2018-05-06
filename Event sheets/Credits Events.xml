@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Credits Events</name>
+    <events>
+        <event-block sid="684637954359311">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="693065770802910" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="325240390341164" type="txt_finalTime">
+                    <param id="0" name="Text">&quot;Tempo: &quot; &amp; playerTime</param>
+                </action>
+                <action id="0" name="Set text" sid="724118220822533" type="txt_finalAttacksUsed">
+                    <param id="0" name="Text">&quot;Disparos: &quot; &amp; playerAttacksUsed</param>
+                </action>
+                <action id="0" name="Set text" sid="459875572050032" type="txt_playerName">
+                    <param id="0" name="Text">playerName</param>
+                </action>
+                <action id="0" name="Set text" sid="505171857090385" type="txt_ending">
+                    <param id="0" name="Text">&quot;Parabéns! Você ganhou!! Pressiona qualquer tecla para voltar ao menu inicial&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="200169410281157">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="659621223517363" type="System">
+                            <param id="0" name="Variable">playerWin</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Lose&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="996784029428110" type="txt_ending">
+                            <param id="0" name="Text">&quot;Você foi completamente DESTRUÍDO! Tente novamente... Pressiona qualquer tecla para voltar ao menu inicial&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="794645510205472">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="459370616029411" type="System">
+                            <param id="0" name="Variable">playerWin</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Credits&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="921525170463144" type="txt_finalTime">
+                            <param id="0" name="Text">&quot;Dev-U&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="246784838970173" type="txt_finalAttacksUsed">
+                            <param id="0" name="Text">&quot;Universidade Cultural&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="433715219767487" type="txt_playerName">
+                            <param id="0" name="Text">&quot;HQ Frenzy - DEMO&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="300631783479059" type="txt_ending">
+                            <param id="0" name="Text">&quot;Jogo produzido pelos integrantes do projeto especial Dev-U na Universidade Federal de Itajubá&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="260830097221425">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="961194043280944" type="Keyboard" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="513641793817023" type="System" />
+                <action id="-45" name="Reset persisted objects" sid="957871308572859" type="System" />
+                <action id="-2" name="Go to layout" sid="411584480533659" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

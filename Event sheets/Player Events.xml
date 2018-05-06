@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player Events</name>
     <events>
+        <variable constant="0" name="playerWin" sid="444946629172710" static="0" type="text">Win</variable>
+        <variable constant="0" name="playerAttacksUsed" sid="895322102903563" static="0" type="number">0</variable>
         <variable constant="0" name="powerUp" sid="842223171559259" static="0" type="text">Inactive</variable>
         <variable constant="0" name="playerDirection" sid="344796134814201" static="0" type="number">270</variable>
         <variable constant="0" name="playerCharacter" sid="867123669580584" static="0" type="text">Goku</variable>
@@ -27,6 +29,9 @@
                 <action id="-3" name="Set position" sid="458005739082045" type="txt_playerName">
                     <param id="0" name="X">spr_player.X</param>
                     <param id="1" name="Y">spr_player.Y - 45</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="327448417004945" type="spr_enemyMelee">
+                    <param id="0" name="Angle">angle(spr_enemyMelee.X, spr_enemyMelee.Y, spr_player.X, spr_player.Y)</param>
                 </action>
             </actions>
         </event-block>
@@ -68,6 +73,10 @@
                 <action id="0" name="Call function" sid="484474552762155" type="Function">
                     <param id="0" name="Name">&quot;DamagePlayer&quot;</param>
                     <param id="1" name="Parameter {n}">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="536596747621921" type="spr_powerUp">
+                    <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;PU&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -330,19 +339,30 @@
         </event-block>
         <event-block sid="640491459376228">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="905502355648790" type="spr_player">
+                <condition id="1" name="Is overlapping another object" sid="905502355648790" type="spr_player">
                     <param id="0" name="Object">spr_portal</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="309604235857162" type="System" />
             </conditions>
             <actions>
+                <action id="7" name="Play (by name)" sid="377793856112030" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Teleport&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;Teleport&quot;</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="462918650868578" type="spr_player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="277952339367033" type="System">
+                    <param id="0" name="Seconds">Audio.Duration(&quot;Teleport&quot;)</param>
+                </action>
                 <action id="-43" name="Go to next/previous layout" sid="343296987756676" type="System">
                     <param id="0" name="Which">0</param>
                 </action>
-                <action id="0" name="Play" sid="377793856112030" type="Audio">
-                    <param id="0" name="Audio file">portal goku</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;portal&quot;</param>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="417311195775814" type="spr_player">
+                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
@@ -367,6 +387,20 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;portal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="874678472939822">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="111792440600174" type="spr_player" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="344294687215530" type="System">
+                    <param id="0" name="Variable">playerWin</param>
+                    <param id="1" name="Value">&quot;Lose&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="106253638084556" type="System">
+                    <param id="0" name="Layout">Credits</param>
                 </action>
             </actions>
         </event-block>

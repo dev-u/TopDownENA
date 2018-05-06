@@ -748,7 +748,18 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="CiclopePU" pingpong="0" repeatcount="1" repeatto="0" sid="697344913386372" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDownENA\Cena 2\hud\powerup.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.947368" y="0.1" />
+                            <point x="1" y="0.5" />
+                            <point x="0.947368" y="0.9" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0526316" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -986,7 +997,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="GokuScene1" pingpong="0" repeatcount="1" repeatto="0" sid="725329819927322" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\lucas\Desktop\TopDown\Cena 1\Background\bg1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDown\Cena 1\Background\bg1.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="GokuScene2" pingpong="0" repeatcount="1" repeatto="0" sid="602387959238552" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.500736" original-source="C:\Users\lucas\Desktop\bg2.png" />
@@ -999,6 +1010,9 @@
                 </animation>
                 <animation framecount="1" loop="0" name="MainMenu" pingpong="0" repeatcount="1" repeatto="0" sid="347234200666786" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDown\MainMenu.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Credits" pingpong="0" repeatcount="1" repeatto="0" sid="193138056572769" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDownENA\Menu Principal\Creditos.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1435,6 +1449,46 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="spr_DevU" sid="919212235451573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751709277100503" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDownENA\Menu Principal\Logo_DevU.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spr_UC" sid="495725312109948">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="412625187414217" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\lucas\Desktop\TopDownENA\Menu Principal\Logo_UC.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.177143" />
+                            <point x="0.67619" y="0.5" />
+                            <point x="0.5" y="0.862857" />
+                            <point x="0.330476" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_ending" sid="252358316795110">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_finalTime" sid="604863940088970">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_finalAttacksUsed" sid="456130079035657">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="spr_textFrame" sid="440252321468580">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341039606915282" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1445,6 +1499,7 @@
         <layout>Ciclope - Scene 1.xml</layout>
         <layout>Ciclope - Scene 2.xml</layout>
         <layout>Ciclope - Scene 3.xml</layout>
+        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Goku - Scene 1 Events.xml</event-sheet>
@@ -1458,6 +1513,7 @@
         <event-sheet>Ciclope - Scene 1 Events.xml</event-sheet>
         <event-sheet>Ciclope - Scene 2 Events.xml</event-sheet>
         <event-sheet>Ciclope - Scene 3 Events.xml</event-sheet>
+        <event-sheet>Credits Events.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
@@ -1482,12 +1538,16 @@
         <file name="charging.ogg" />
         <file name="fireball.m4a" />
         <file name="fireball.ogg" />
-        <file name="kamehameha.m4a" />
-        <file name="kamehameha.ogg" />
+        <file name="GokuSpecial.m4a" />
+        <file name="GokuSpecial.ogg" />
         <file name="som fase vencida.m4a" />
         <file name="som fase vencida.ogg" />
-        <file name="portal goku.m4a" />
-        <file name="portal goku.ogg" />
+        <file name="GokuTeleport.m4a" />
+        <file name="GokuTeleport.ogg" />
+        <file name="CiclopeSpecial.m4a" />
+        <file name="CiclopeSpecial.ogg" />
+        <file name="CiclopeTeleport.m4a" />
+        <file name="CiclopeTeleport.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

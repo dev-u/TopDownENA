@@ -36,16 +36,20 @@
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">1</param>
                 </action>
+                <action id="-10" name="Add to" sid="600696229913160" type="System">
+                    <param id="0" name="Variable">playerAttacksUsed</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="507191351575822" type="System">
+                    <param id="0" name="Variable">playerAttackUses</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-8" name="Set angle" sid="142895183868629" type="spr_gokuBasicAttack">
                     <param id="0" name="Angle">playerDirection</param>
                 </action>
                 <action id="4" name="Set animation" sid="660006624681702" type="spr_gokuBasicAttack">
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Attack&quot;</param>
                     <param id="1" name="From">1</param>
-                </action>
-                <action id="-11" name="Subtract from" sid="507191351575822" type="System">
-                    <param id="0" name="Variable">playerAttackUses</param>
-                    <param id="1" name="Value">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="631090960145377" type="System">
                     <param id="0" name="Seconds">0.5 - (spr_player.AnimationFrameCount / spr_player.AnimationSpeed - 0.3)</param>
@@ -111,11 +115,15 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="511657649285895" type="Audio">
-                    <param id="0" name="Audio file">kamehameha</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;kamehameha&quot;</param>
+                <action id="6" name="Stop" sid="627505142919406" type="Audio">
+                    <param id="0" name="Tag">&quot;charging&quot;</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="511657649285895" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Special&quot;</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">0</param>
+                    <param id="2" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-9" name="Set value" sid="750482315452444" type="System">
                     <param id="0" name="Variable">powerUp</param>
@@ -165,6 +173,10 @@
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="Image point">1</param>
                 </action>
+                <action id="-10" name="Add to" sid="369788665460491" type="System">
+                    <param id="0" name="Variable">playerAttacksUsed</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-8" name="Set angle" sid="189818323358678" type="spr_gokuSpecialAttackTail">
                     <param id="0" name="Angle">playerDirection</param>
                 </action>
@@ -185,9 +197,6 @@
                 <action id="4" name="Set animation" sid="542378402955087" type="spr_gokuSpecialAttackHead">
                     <param id="0" name="Animation">replace(playerCharacter, &quot;Special&quot;, &quot;&quot;) &amp; &quot;Attack&quot;</param>
                     <param id="1" name="From">1</param>
-                </action>
-                <action id="6" name="Stop" sid="627505142919406" type="Audio">
-                    <param id="0" name="Tag">&quot;charging&quot;</param>
                 </action>
             </actions>
         </event-block>

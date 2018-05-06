@@ -63,7 +63,7 @@
                 </action>
                 <action id="-9" name="Set value" sid="546873544476477" type="System">
                     <param id="0" name="Variable">playerAttackUses</param>
-                    <param id="1" name="Value">120</param>
+                    <param id="1" name="Value">150</param>
                 </action>
             </actions>
         </event-block>

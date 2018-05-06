@@ -282,16 +282,6 @@
         <variable constant="0" name="enemyMeleeCharacter" sid="457731985124981" static="0" type="text">Saibamen</variable>
         <variable constant="0" name="enemyMeleeDamage" sid="888736752896978" static="0" type="number">10</variable>
         <variable constant="0" name="enemyMeleeHealth" sid="949432292040901" static="0" type="number">100</variable>
-        <event-block sid="352976404895898">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="844063530158075" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="736296541766892" type="spr_enemyMelee">
-                    <param id="0" name="Angle">angle(spr_enemyMelee.X, spr_enemyMelee.Y, spr_player.X, spr_player.Y)</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="260708101731575">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="683033819942284" type="spr_enemyMelee">
