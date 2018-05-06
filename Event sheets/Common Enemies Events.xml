@@ -274,12 +274,6 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="641281752012694" type="spr_enemyRanged" />
                         <action id="-9" name="Destroy" sid="987381007685278" type="spr_enemyRangedAttack" />
-                        <action id="0" name="Play" sid="582617762249406" type="Audio">
-                            <param id="0" name="Audio file">som fase vencida</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">5</param>
-                            <param id="1" name="Tag (optional)">&quot;vencida&quot;</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>

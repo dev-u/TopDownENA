@@ -1015,6 +1015,9 @@
                 <behavior-type name="Bullet" sid="872050724782467">
                     <behavior id="Bullet" />
                 </behavior-type>
+                <behavior-type name="8Direction" sid="348909909000664">
+                    <behavior id="EightDir" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="1" name="SaibamenUp" pingpong="0" repeatcount="1" repeatto="0" sid="993623965168221" speed="5">

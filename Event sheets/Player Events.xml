@@ -357,10 +357,20 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">0</param>
                 </condition>
+                <condition id="-4" name="Trigger once while true" sid="977060335405745" type="System" />
             </conditions>
             <actions>
                 <action id="11" name="Set collisions enabled" sid="531985136014572" type="spr_portal">
                     <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="341498877114960" type="spr_portal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="240501749635405" type="Audio">
+                    <param id="0" name="Audio file">som fase vencida</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;portal&quot;</param>
                 </action>
             </actions>
         </event-block>
