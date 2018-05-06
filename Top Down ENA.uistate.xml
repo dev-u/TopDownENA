@@ -12,8 +12,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Credits</layout>
         <layout order="1">Main Menu</layout>
-        <event-sheet active="1" order="2">Credits Events</event-sheet>
+        <layout order="4">Ciclope - Scene 2</layout>
+        <layout order="5">Ciclope - Scene 1</layout>
+        <layout order="6">Ciclope - Scene 3</layout>
+        <event-sheet order="2">Credits Events</event-sheet>
         <event-sheet order="3">Main Menu Events</event-sheet>
+        <event-sheet active="1" order="7">Common Enemies Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,7 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />

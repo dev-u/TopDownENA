@@ -340,13 +340,13 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Call function" sid="328259221596994" type="Function">
-                    <param id="0" name="Name">&quot;Damage Melee Enemy&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
                 <action id="-12" name="Subtract from" sid="167718715129024" type="spr_enemyMelee">
                     <param id="0" name="Instance variable">health</param>
                     <param id="1" name="Value">spr_gokuBasicAttack.damage</param>
+                </action>
+                <action id="0" name="Call function" sid="328259221596994" type="Function">
+                    <param id="0" name="Name">&quot;Damage Melee Enemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
                 <action id="-9" name="Destroy" sid="638370228008654" type="spr_gokuBasicAttack" />
             </actions>
