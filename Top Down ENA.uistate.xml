@@ -14,7 +14,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="1">Main Menu</layout>
         <layout order="4">Ciclope - Scene 2</layout>
         <layout order="5">Ciclope - Scene 1</layout>
-        <layout active="1" order="6">Ciclope - Scene 3</layout>
+        <layout order="6">Ciclope - Scene 3</layout>
+        <layout active="1" order="8">Goku - Scene 1</layout>
         <event-sheet order="2">Credits Events</event-sheet>
         <event-sheet order="3">Main Menu Events</event-sheet>
         <event-sheet order="7">Common Enemies Events</event-sheet>
