@@ -888,11 +888,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1140</x>
-                        <y>252</y>
+                        <x>1149</x>
+                        <y>250.5</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>42</height>
+                        <width>251</width>
+                        <height>39</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
